@@ -2,9 +2,9 @@ a {
 	transition: $transition-base;
 }
 body {
-	background-image: url(../img/PIXNIO-194061-1280x720.jpg);
+	background-image: url(../img/background.jpg);
 	background-size: cover;
-	page-break-after: center;
+	background-position: center;
 	background-repeat: no-repeat;
 	&:before {
 		content: '';

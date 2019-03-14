@@ -12,8 +12,6 @@
         count = 0,
         maxStars = 1400;
 
-// Thanks @jackrugile for the performance tip! https://codepen.io/jackrugile/pen/BjBGoM
-// Cache gradient
     var canvas2 = document.createElement('canvas'),
         ctx2 = canvas2.getContext('2d');
     canvas2.width = 100;
@@ -29,8 +27,6 @@
     ctx2.beginPath();
     ctx2.arc(half, half, half, 0, Math.PI * 2);
     ctx2.fill();
-
-// End cache
 
     function random(min, max) {
         if (arguments.length < 2) {
@@ -106,7 +102,7 @@
     $(window).on('load', function() {
         setTimeout(function() {
             $('.js-preloader').fadeOut('slow');
-        }, 5000);
+        }, 5500);
     });
 
     var counter = 0;
@@ -116,7 +112,7 @@
         $(".counter hr").css("width", c + "%");
         counter++;
         c++;
-        if(counter == 101) {
+        if(counter > 100) {
             clearInterval(i);
         }
     }, 50);
@@ -126,7 +122,7 @@
            var location =  $(this).attr('href');
            $(location).find('.page--slider__img').find('img').css({
                'animation-play-state' : 'running'
-           })
+           });
             $('.page').css({
                 'backgroundColor' : 'transparent'
             })
