@@ -1,0 +1,38 @@
+.section {
+	padding: 70px 0;
+	&-overlay {
+		&::before {
+			content:'';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: $secondary;
+			opacity: 0.85;
+		}
+	}
+	&-home {
+		height: 100vh;
+		background-image: url(../img/wel-section-bg.jpg);
+		@include rbg;
+		position: relative;
+	}
+	&-team {
+		background-image: url(../img/team-sec-bg.jpg);
+		@include rbg;
+		position: relative;
+	}
+	&-testimonials {
+		background-image: url(../img/testimonials-sec-bg.jpg);
+		@include rbg;
+		position: relative;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.section-home {
+		height: auto;
+		padding: 120px 0;
+	}
+}

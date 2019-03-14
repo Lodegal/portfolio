@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Barber</title>
+	<meta name="description" content="Description of the site">
+
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, maximum-scale=1">
+
+	<!-- connection FAVICONS -->
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	
+	<!-- THE BACKGROUND OF THE STATUS-BAR (ON MOBILE) -->
+	<meta name="theme-color" content="#000">
+
+	<!-- connection GOOGLE FONTS -->
+
+	<!-- connection CSS -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/all.css">
+
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar">
+	<!-- HEADER -->
+	<header class="header js-header">
+		<!-- First-half -->
+		<div class="first-half">
+			<div class="container">
+				<div class="row">
+					<!-- Logo -->
+					<div class="col-lg-2">
+						<div class="logo"><span class="logo__text">Barber</span></div>
+					</div>
+					<!-- Logo END -->
+
+					<!-- Number -->
+					<div class="col-lg-3 d-flex">
+						<div class="contact-icon"><i class="fas fa-phone"></i></div>
+						<div class="contact-text"><p>1-800-00-000-0000</p><p>1-800-00-200-0010</p></div>
+					</div>
+					<!-- Number END -->
+
+					<!-- Location -->
+					<div class="col-lg-3 d-flex">
+						<div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+						<div class="contact-text"><p>11301 West Olympic Boulevard</p><p>New Yourk, USA</p></div>
+					</div>
+					<!-- Location END -->
+
+					<!-- Work-time -->
+					<div class="col-lg-2 d-flex">
+						<div class="contact-icon"><i class="far fa-clock"></i></div>
+						<div class="contact-text"><p>Mon - Fri</p><p>9.00 - 18.00 </p></div>
+					</div>
+					<!-- Work-time END-->
+
+					<!-- Search -->
+					<div class="col-lg-2 ml-auto d-flex align-items-center">
+						<form class="search d-flex">
+				      <input type="text" class="search-term" placeholder="Search..">
+				      <button type="submit" class="search-button">
+				        <i class="fa fa-search"></i>
+				     </button>
+				   </form>
+					</div>
+					<!-- Search END-->
+				</div>
+			</div>
+		</div>
+		<!-- First-half END-->	
+
+		<!-- Second-half -->
+		<div class="second-half">
+			<div class="container">
+				<nav  class='js-navbar navbar'>
+					<ul class="menu d-flex justify-content-end">
+						<li class="menu__item"><a class='nav-link' href="#home">home</a></li>
+						<li class="menu__item"><a class='nav-link' href="#about">about</a></li>
+						<li class="menu__item"><a class='nav-link' href="#services">servises</a></li>
+						<li class="menu__item"><a class='nav-link' href="#barbers">barbers</a></li>
+						<li class="menu__item"><a class='nav-link' href="#testimonials">testimonials</a></li>
+						<li class="menu__item"><a class='nav-link' href="#portfolio">Portfolio</a></li>
+						<li class="menu__item"><a class='nav-link' href="#prices">prices</a></li>
+						<li class="menu__item"><a class='nav-link' href="#contacts">contacts</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<!-- Second-half END-->
+	</header>
+	<!-- HEADER END -->
+
+	<!-- Mobile-header -->
+	<div class="mobile-header fixed-top">
+		<div class="container d-flex justify-content-between align-items-center">
+			<span class="mobile-logo">BARBER</span>
+			<div class="menu-toggle">
+		    <div class="one"></div>
+		    <div class="two"></div>
+		    <div class="three"></div>
+		  </div>
+		</div>
+	</div>
+	<!-- Mobile-header END-->
+
+	<!-- Mobile-navigation -->
+	<div class="overlay"></div>
+	<div class="mobile-navigation">
+	  <nav class="js-navbar mobile-menu navbar">
+			<ul>
+				<li class="mobile-item"><a class='nav-link' href="#home">home</a></li>
+				<li class="mobile-item"><a class='nav-link' href="#about">about</a></li>
+				<li class="mobile-item"><a class='nav-link' href="#services">servises</a></li>
+				<li class="mobile-item"><a class='nav-link' href="#barbers">barbers</a></li>
+				<li class="mobile-item"><a class='nav-link' href="#testimonials">testimonials</a></li>
+				<li class="mobile-item"><a class='nav-link' href="#portfolio">Portfolio</a></li>
+				<li class="mobile-item"><a class='nav-link' href="#prices">prices</a></li>
+				<li class="mobile-item"><a class='nav-link' href="#contacts">contacts</a></li>
+			</ul>
+		</nav>
+		<div class="mobile-contacts">
+			<!-- Number -->
+			<div class="d-flex" style="margin-bottom: 20px;">
+				<div class="mobile-contact-icon"><i class="fas fa-phone"></i></div>
+				<div class="mobile-contact-text"><p>1-800-00-000-0000</p><p>1-800-00-200-0010</p></div>
+			</div>
+			<!-- Number END -->
+
+			<!-- Location -->
+			<div class="d-flex" style="margin-bottom: 20px;">
+				<div class="mobile-contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+				<div class="mobile-contact-text"><p>11301 West Olympic Boulevard</p><p>New Yourk, USA</p></div>
+			</div>
+			<!-- Location END -->
+
+			<!-- Work-time -->
+			<div class="d-flex" style="margin-bottom: 20px;">
+				<div class="mobile-contact-icon"><i class="far fa-clock"></i></div>
+				<div class="mobile-contact-text"><p>Mon - Fri</p><p>9.00 - 18.00 </p></div>
+			</div>
+			<!-- Work-time END-->
+		</div>
+
+		<!-- Search -->
+		<form class="mobile-search d-flex">
+      <input type="text" class="mobile-search-term" placeholder="Search..">
+      <button type="submit" class="mobile-search-button">
+        <i class="fa fa-search"></i>
+     </button>
+   </form>
+   <!-- Search END-->
+	</div>	
+	<!-- Mobile-navigation END-->
+
+	<!-- Section-welcome -->
+	<section id='home' class="section-welcome">
+		
+		<!-- Main slider -->
+		<div class="main-slider js-main-slider">
+
+			<div class="ms-photo ms-photo-first">
+				<div class="container">
+					<div class="ms-content">
+						<h1 class="main-title">welcome<br>to the<br><span>barbershop</span></h1>
+						<a href="#appointment" class="btn btn-outline-primary scroll-down">Make An Appointment</a>
+					</div>
+				</div>
+			</div> 
+
+			<div class="ms-photo ms-photo-second">
+				<div class="container">
+					<div class="ms-content">
+						<h1 class="main-title">New<br> Yourk’s<br><span>№1<br>Barbershop</span></h1>
+					</div>
+				</div> 
+			</div> 
+			
+		</div>
+		<!-- Main slider END-->
+	</section>
+	<!-- Section-welcome END-->
+
+	<!-- Section-about-->
+	<section id="about" class="section section-about">
+		<div class="container">
+			<!-- Section-title -->
+			<h2 class="section-title">About us</h2>
+			<div class="section-icon"></div>
+			<div class="section-description"><p>We are quality control, high level of service. Our masters equally professionally own all the techniques of shaving and haircuts.</p></div>
+			<!-- Section-title END-->
+			<div class="row">
+				<div class="col-md-6 col-lg-4">
+					<!-- About-form -->
+					<div class="about-form">
+						<div class="about-form-icon"><img src="img/svg/razor-hair-salon-tool.svg" alt="icon"></div>
+						<h3 class="about-form-title">New Yourk’s №1 Barbershop</h3>
+						<div class="about-form-text"><p>The city has many hairdressing salons, berbershops and other establishments, where the face and head of a man can be put in order. But we still insist - better to get a haircut and shave with us.</p></div>
+					</div>
+				</div>
+
+				<div class="col-md-6 col-lg-4">
+					<div class="about-form">
+						<div class="about-form-icon"><img src="img/svg/scissor-and-comb.svg" alt="icon"></div>
+						<h3 class="about-form-title">Profeccionals Barbers</h3>
+						<div class="about-form-text"><p>It is our work not just ordinary hairdressers, but barbers who will be able to make a hairstyle of any complexity that will underline your masculinity, originality and individuality. Even the thread in the hands of our specialists is a tool.</p></div>
+					</div>
+				</div>
+
+				<div class="col-md-12 col-lg-4">
+					<div class="about-form">
+						<div class="about-form-icon"><img src="img/svg/spray-bottles.svg" alt="icon"></div>
+						<h3 class="about-form-title">Branded Products</h3>
+						<div class="about-form-text"><p>We have not only the best craftsmen in the city, but also everything that a man who follows his appearance can only need. You did not even imagine that there are such effective means for caring for the hair, beard and skin of the face. We will help you to look your best every day.</p></div>
+					</div>
+				</div>
+				<!-- About-form END-->
+			</div>
+		</div>
+	</section>
+	<!-- Section-about END-->
+
+	<!-- Section-advantages -->
+	<section class="section-advantages">
+		<div class="container">
+			<div class="row">
+					<!-- Count-up-item -->
+				<div class="col-sm-6 col-lg-3">
+					<p class="count-up-item js-count-up-item" data-count-number="2500">0</p>
+					<h3 class="advantages-title">happy clients</h3>
+				</div>
+
+				<div class="col-sm-6 col-lg-3">
+					<p class="count-up-item js-count-up-item" data-count-number="300">0</p>
+					<h3 class="advantages-title">coffee cups</h3>
+				</div>
+
+				<div class="col-sm-6 col-lg-3">
+					<p class="count-up-item js-count-up-item" data-count-number="120">0</p>
+					<h3 class="advantages-title">barbers</h3>
+				</div>
+
+				<div class="col-sm-6 col-lg-3">
+					<p class="count-up-item js-count-up-item" data-count-number="30">0</p>
+					<h3 class="advantages-title">stores</h3>
+				</div>
+			</div>
+			<!-- Count-up-item END-->
+		</div>
+	</section>
+	<!-- Section-advantages END-->
+
+	<!-- Section-services -->
+	<section class="section section-services" id="services">
+		<div class="container-fluid">
+			<!-- Section-title -->
+			<h2 class="section-title">our services</h2>
+			<div class="section-icon"></div>
+			<div class="section-description section-description-services"><p>You have sat down and relaxed, resting from work and day-to-day bustle while the master is working on your style.</p></div>
+			<!-- Section-title END-->
+			<div class="row justify-content-around">
+				<!-- Services-form -->
+				<div class="col-md-6 col-lg-5">
+					<div class="services-form">
+						<div class="services-form-text text-right">
+							<h3 class="services-form-title">Hair cut</h3>
+							<p>It is our work is not just ordinary hairdressers, but barbers, who will be able to make a hairstyle of any complexity!</p>
+						</div>
+						<div class="services-form-icon">
+							<div class="border-icon"><img src="img/svg/hairdresser-with-scissors-cutting-the-hair-to-a-client-sitting-in-front-of-him.svg" alt="icon"></div>
+						</div>				
+					</div>
+				</div>
+
+				<div class="col-md-6 col-lg-5 d-flex justify-content-end">
+					<div class="services-form">
+						<div class="services-form-icon">
+							<div class="border-icon"><img src="img/svg/hairdresser-with-spray-bottle-behind-the-client-of-hair-salon.svg" alt="icon"></div>
+						</div>	
+						<div class="services-form-text text-left">
+							<h3 class="services-form-title">Hair styling</h3>
+							<p>Our master offers you many interesting options. Each hairstyle, even very short, is a small work of art, a combination of creativity and natural beauty.</p>
+						</div>			
+					</div>
+				</div>
+				<div class="w-100"></div>
+			
+				<div class="col-md-6 col-lg-5">
+					<div class="services-form">
+						<div class="services-form-text text-right">
+							<h3 class="services-form-title">Hair wash</h3>
+							<p>Our masters will quickly and gently wash your hair or beard. We use only branded products.</p>
+						</div>
+						<div class="services-form-icon">
+							<div class="border-icon"><img src="img/svg/hairdresser-washing-the-hair-of-a-client-with-bubbles-shampoo.svg" alt="icon"></div>
+						</div>				
+					</div>
+				</div>
+				
+				<div class="col-md-6 col-lg-5 d-flex justify-content-end">
+					<div class="services-form">
+						<div class="services-form-icon">
+							<div class="border-icon"><img src="img/svg/hairdresser-applying-hair-dye-to-a-client-of-hair-salon.svg" alt="icon"></div>
+						</div>	
+						<div class="services-form-text text-left">
+							<h3 class="services-form-title">Shave</h3>
+							<p>We pay much attention to the haircut of the beard and mustache, because for many men they make up 90% of the image. If you are a happy owner of a beard and mustache, we will help make them wonderful.</p>
+						</div>			
+					</div>
+				</div>
+				<!-- Services-form END-->
+			</div>	
+		</div>
+	</section>
+	<!-- Section-services END-->
+
+	<!-- Section-appointment-->	
+	<section class="section section-appointment" id="appointment">
+		<div class="container">
+			<!-- Section-title -->
+			<h2 class="section-title text-white">make an appointment</h2>
+			<div class="section-icon"></div>
+			<div class="section-description section-description-appointment text-white-50"><p>Select the service to record online:</p></div>
+			<!-- Section-title END-->
+			
+			<!-- Section-appointment form-->	
+			<form>
+				<div class="row justify-content-center">
+
+					<div class="col-lg-4">
+						<div class="group">      
+				      <input type="text" required>
+				      <label>Name</label>
+				    </div>
+					</div>
+
+					<div class="col-lg-4">
+						<div class="group">     
+							<select  data-simplebar class="js-select" type="text" required>
+								<option></option>
+								<optgroup label="MAN APPOINTMENT">
+									<option value="mHair_cut">Hair cut</option>
+									<option value="mHair_wash">Hair wash</option>
+									<option value="mHair_styling">Hair styling</option>
+									<option value="mFace_shave">Face shave</option>
+									<option value="mHead_shave">Head shave</option>
+									<option value="mRoyal_shave">Royal shave</option>
+								</optgroup>
+								<optgroup label="WOMAN APPOINTMENT">
+									<option value="wHair_cut">Hair cut</option>
+									<option value="wHair_wash">Hair wash</option>
+									<option value="wHair_styling">Hair styling</option>
+									<option value="wHair_color">Hair color</option>
+									<option value="wStyling_&_Color">Styling & Color</option>
+									<option value="wStyling_&_Hair cut">Styling & Hair cut</option>
+								</optgroup>	
+							</select>
+							<label>Service</label>
+						</div>	
+					</div>
+
+					<div class="w-100"></div>	
+				
+					<div class="col-lg-4">
+						<div class="group">      
+				      <input type="text" required>
+				      <label>Phone</label>
+				    </div>
+					</div>
+
+					<div class="col-lg-4">
+						<div class="group">      
+				     <select class="js-second-select" type="text" required>
+				     	<option></option>
+				     	<option value="Darrell_Gibbs">Darrell Gibbs</option>
+				     	<option value="David _Clarke">David Clarke</option>
+				     	<option value="Richard_Owens">Richard Owens</option>
+				     </select>
+				     <label>Barber</label>
+				    </div>
+					</div>
+
+					<div class="w-100"></div>	
+
+					<div class="col-lg-4">
+						<div class="group">      
+				      <input type="text" required>
+				      <label>E-mail</label>
+				    </div>
+					</div>
+
+					<div class="col-lg-4">
+						<div class="group">      
+				      <input id="datepicker" autocomplete='off' style="cursor: pointer;" type="text" data-language='en' required>
+				      <label>Data</label>
+				      <i class="far fa-calendar-alt"></i>
+				    </div>
+					</div>	
+
+					<div class="col-lg-8">
+						<div class="group">      
+				      <textarea type="text" cols="30" rows="5"  required></textarea>
+				      <label>Message</label>
+				    </div>
+					</div>	
+				</div>
+				<button class="btn btn-outline-primary" style="display: block; margin: 0 auto;">Make An Appointment</button>
+			</form>	
+			<!-- Section-appointment form END-->	
+		</div>
+	</section>
+	<!-- Section-appointment END-->	
+
+	<!-- Section-barbers -->
+	<section class="section section-barbers" id="barbers">
+		<div class="container">
+			<!-- Section-title -->
+			<h2 class="section-title">our barbers</h2>
+			<div class="section-icon"></div>
+			<div class="section-description section-description-barbers"><p>Our masters equally professionally own all the techniques of shaving and haircuts, so regardless of the choice of barber you will get the result you came for.</p></div>
+			<!-- Section-title END-->
+			<div class="row d-flex justify-content-center">
+				<!-- Barbers -->
+				<div class="col-6 col-md-4">
+					<div class="barber">
+						<div class="barber-photo" style='background-image: url(img/barber/b1.jpg);'></div>
+						<h3 class="barber-title">Darrell Gibbs</h3>
+						<ul class="barber-rating">
+							<li class="barber-rating-item"><i class="fas fa-star"></i></li>
+							<li class="barber-rating-item"><i class="fas fa-star"></i></li>
+							<li class="barber-rating-item"><i class="fas fa-star"></i></li>
+							<li class="barber-rating-item"><i class="fas fa-star"></i></li>
+							<li class="barber-rating-item"><i class="fas fa-star"></i></li>
+						</ul>
+					</div>
+				</div>
+			
+				<div class="col-6 col-md-4">
+					<div class="barber">
+						<div class="barber-photo" style='background-image: url(img/barber/b2.jpg);'></div>
+						<h3 class="barber-title">David Clarke</h3>
+						<ul class="barber-rating">
+							<li class="barber-rating-item"><i class="fas fa-star"></i></li>
+							<li class="barber-rating-item"><i class="fas fa-star"></i></li>
+							<li class="barber-rating-item"><i class="fas fa-star"></i></li>
+							<li class="barber-rating-item"><i class="fas fa-star"></i></li>
+							<li class="barber-rating-item"><i class="far fa-star"></i></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-6 col-md-4">
+					<div class="barber">
+						<div class="barber-photo" style='background-image: url(img/barber/b3.jpg);'></div>
+						<h3 class="barber-title">Richard Owens</h3>
+						<ul class="barber-rating">
+							<li class="barber-rating-item"><i class="fas fa-star"></i></li>
+							<li class="barber-rating-item"><i class="fas fa-star"></i></li>
+							<li class="barber-rating-item"><i class="fas fa-star"></i></li>
+							<li class="barber-rating-item"><i class="fas fa-star"></i></li>
+							<li class="barber-rating-item"><i class="far fa-star"></i></li>
+						</ul>
+					</div>
+				</div>
+				<!-- Barbers END-->
+			</div>
+		</div>
+	</section>
+	<!-- Section-barbers END-->
+
+	<!-- Section-clients-->
+	<section class="section section-clients" id="testimonials">
+		<div class="container">
+			<!-- Section-title -->
+			<h2 class="section-title text-white">our clients say</h2>
+			<div class="section-icon"></div>
+			<div class="section-description section-description-clients text-white-50"><p>Testimonials from customers of the barber shop.</p></div>
+			<!-- Section-title END-->
+
+			<!-- Second-slider -->
+			<div class="second-slider js-second-slider">
+
+				<div class="review-content">
+					<ul class="review-rating">
+						<li class="review-rating-item"><i class="fas fa-star"></i></li>
+						<li class="review-rating-item"><i class="fas fa-star"></i></li>
+						<li class="review-rating-item"><i class="fas fa-star"></i></li>
+						<li class="review-rating-item"><i class="fas fa-star"></i></li>
+						<li class="review-rating-item"><i class="fas fa-star"></i></li>
+					</ul>
+					<p class="review-text">A good salon, comfortable armchairs, excellent service, which includes a variety of drinks, and relaxing music. And most importantly, they are excellent master hairdressers, I already had a haircut for two of them, and I am pleased with the work of both. I will continue to visit this salon.</p>
+					<img class="review-photo" src="img/review/r1.jpg" alt="photo">
+					<span class="review-name">Matthew Turner</span>
+				</div>
+
+				<div class="review-content">
+					<ul class="review-rating">
+						<li class="review-rating-item"><i class="fas fa-star"></i></li>
+						<li class="review-rating-item"><i class="fas fa-star"></i></li>
+						<li class="review-rating-item"><i class="fas fa-star"></i></li>
+						<li class="review-rating-item"><i class="fas fa-star"></i></li>
+						<li class="review-rating-item"><i class="far fa-star"></i></li>
+					</ul>
+					<p class="review-text">Here you can not only make a haircut, but also have a good rest. Always you will be offered coffee and other drinks. I'm constantly adjusting the haircut. Masters work at the proper level, always in the course of different novelties, give useful advice. Armchairs are very comfortable.</p>
+					<img class="review-photo" src="img/review/r2.jpg" alt="photo">
+					<span class="review-name">Albert O’Connor</span>
+				</div>
+
+				<div class="review-content">
+					<ul class="review-rating">
+						<li class="review-rating-item"><i class="fas fa-star"></i></li>
+						<li class="review-rating-item"><i class="fas fa-star"></i></li>
+						<li class="review-rating-item"><i class="fas fa-star"></i></li>
+						<li class="review-rating-item"><i class="fas fa-star"></i></li>
+						<li class="review-rating-item"><i class="far fa-star"></i></li>
+					</ul>
+					<p class="review-text">Employees: cheerful, energetic, kind, stylish. The quality of the haircut at the height (I came, without the final, exact desire that I want, did not know what exactly.) Finally, I trusted the master and waited for the result).The haircut is abrupt, I was approached, pleased. 10/10</p>
+					<img class="review-photo" src="img/review/r3.jpg" alt="photo">
+					<span class="review-name">Richard Hardman</span>
+				</div>
+				<!-- Second-slider END-->
+			</div>
+		</div>
+	</section>
+	<!-- Section-clients END-->
+
+	<!-- Section-portfolio-->
+	<section class="section-portfolio" id="portfolio">
+		<!-- Section-title -->
+			<h2 class="section-title">our gallery</h2>
+			<div class="section-icon"></div>
+			<div class="section-description section-description-barbers"><p>Here you can see real examples of the work of our masters.</p></div>
+		<!-- Section-title END-->
+
+		<!-- Gallery -->
+		<div class="gallery js-gallery">
+			<a class="gallery-item" href="img/gallery/g1.jpg"><span class="-resp-bg-img" style='background-image: url(img/gallery/g1.jpg);'></span></a>
+			<a class="gallery-item" href="img/gallery/g2.jpg"><span class="-resp-bg-img" style='background-image: url(img/gallery/g2.jpg);'></span></a>
+			<a class="gallery-item" href="img/gallery/g3.jpg"><span class="-resp-bg-img" style='background-image: url(img/gallery/g3.jpg);'></span></a>
+			<a class="gallery-item" href="img/gallery/g4.jpeg"><span class="-resp-bg-img" style='background-image: url(img/gallery/g4.jpeg);'></span></a>
+			<a class="gallery-item" href="img/gallery/g5.jpeg"><span class="-resp-bg-img" style='background-image: url(img/gallery/g5.jpeg);'></span></a>
+			<a class="gallery-item" href="img/gallery/g6.jpg"><span class="-resp-bg-img" style='background-image: url(img/gallery/g6.jpg);'></span></a>
+			<a class="gallery-item" href="img/gallery/g7.jpeg"><span class="-resp-bg-img" style='background-image: url(img/gallery/g7.jpeg);'></span></a>
+			<a class="gallery-item" href="img/gallery/g8.jpeg"><span class="-resp-bg-img" style='background-image: url(img/gallery/g8.jpeg);'></span></a>
+			<a class="gallery-item" href="img/gallery/g9.jpeg"><span class="-resp-bg-img" style='background-image: url(img/gallery/g9.jpeg);'></span></a>
+			<a class="gallery-item" href="img/gallery/g10.jpeg"><span class="-resp-bg-img" style='background-image: url(img/gallery/g10.jpeg);'></span></a>
+		</div>
+		<!-- Gallery END-->
+	</section>
+	<!-- Section-portfolio END-->
+
+	<!-- Section-pricing-->
+	<section class="section section-pricing" id="prices">
+		<div class="container">
+			<!-- Section-title -->
+				<h2 class="section-title">our pricing</h2>
+				<div class="section-icon"></div>
+				<div class="section-description section-description-barbers"><p>We specialize in working not only with men, but also with women. Here you can see the prices for our services.</p></div>
+			<!-- Section-title END-->
+		
+			<div class="row d-flex justify-content-center">
+				<!-- Man-prices -->
+				<div class="col-md-6 col-lg-4">
+					<div class="man-prices">
+						<div class="prices-block bg-secondary">MAN</div>
+						<ul class="service-list">
+							<li class="prices-item">Hair cut<span class="price">16$</span></li>
+							<li class="prices-item">Hair wash<span class="price">12$</span></li>
+							<li class="prices-item">Hair styling<span class="price">20$</span></li>
+							<li class="prices-item">Face shave<span class="price">15$</span></li>
+							<li class="prices-item">Head shave<span class="price">15$</span></li>
+							<li class="prices-item">Royal shave<span class="price">20$</span></li>
+						</ul>
+						<div class="prices-block bg-secondary">APPOINTMENT</div>
+					</div>
+				</div>
+				<!-- Man-prices END-->
+
+				<!-- Woman-prices -->
+				<div class="col-md-6 col-lg-4">	
+					<div class="woman-prices">
+						<div class="prices-block bg-primary">WOMAN</div>
+						<ul class="service-list">
+							<li class="prices-item">Hair cut<span class="price">20$</span></li>
+							<li class="prices-item">Hair wash<span class="price">12$</span></li>
+							<li class="prices-item">Hair styling<span class="price">30$</span></li>
+							<li class="prices-item">Hair color<span class="price">45$</span></li>
+							<li class="prices-item">Styling & Color<span class="price">60$</span></li>
+							<li class="prices-item">Styling & Hair cut<span class="price">45$</span></li>
+						</ul>
+						<div class="prices-block bg-primary">APPOINTMENT</div>
+					</div>
+				</div>
+				<!-- Woman-prices END-->
+			</div>
+		</div>
+	</section>
+	<!-- Section-pricing END-->
+
+	<!-- FOOTER -->
+	<footer class="section footer" id="contacts">
+		<div class="container">
+			<div class="row">
+				<!-- Subscribe -->
+				<div class="col-lg-3">
+					<div class="footer-info">
+						<h3 class="footer-title text-subscribe">Subscribe</h3>
+						<p class="subscribe-text text-white-50">Subscribe to us, to be informed of all the news.</p>
+						<form action="#?" class="subscribe-form">
+							<input type="Email" placeholder="Your E-mail" class="subscribe-form-input" required>
+							<button type="Submit" class="subscribe-form-btn"><i class="fas fa-paper-plane"></i></button>
+						</form>
+					</div>
+				</div>
+				<!-- Subscribe END-->
+
+				<!-- Working hours -->
+				<div class="col-lg-3">
+					<div class="footer-info">
+						<h3 class="footer-title text-center">Working hours</h3>
+						<ul class="working-hours text-white-50">
+							<li class="working-hours-item">mon<span>9.00 - 18.00</span></li>
+							<li class="working-hours-item">tue<span>9.00 - 18.00</span></li>
+							<li class="working-hours-item">wed<span>9.00 - 18.00</span></li>
+							<li class="working-hours-item">thu<span>9.00 - 18.00</span></li>
+							<li class="working-hours-item">fri<span>9.00 - 16.00</span></li>
+							<li class="working-hours-item">sat<span>10.00 - 14.00</span></li>
+							<li class="working-hours-item">sun<span>Output</span></li>
+						</ul>
+					</div>
+				</div>
+				<!-- Working hours END-->
+
+				<!-- Blog -->
+				<div class="col-lg-3">
+					<div class="footer-info">
+						<h3 class="footer-title text-center">latest from blog</h3>
+						<div class="news">
+							<h4 class="news-title text-primary">Lorem ipsum dolor</h4>
+							<p class="news-text text-white-50">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium...</p>
+						</div>
+						<div class="news">
+							<h4 class="news-title text-primary">Lorem ipsum dolor</h4>
+							<p class="news-text text-white-50">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium...</p>
+						</div>
+					</div>
+				</div>
+				<!-- Blog END-->
+
+				<!-- instagram -->
+				<div class="col-lg-3">	
+					<div class="footer-info">
+						<h3 class="footer-title footer-title-instagram">instagram</h3>
+						<div class="instagram">
+							<a class="instagram-item" href="https://www.instagram.com/" style='background-image: url(img/instagram/instagram-1.jpg);'></a>
+							<a class="instagram-item" href="https://www.instagram.com/" style='background-image: url(img/instagram/instagram-2.jpg);'></a>
+							<a class="instagram-item" href="https://www.instagram.com/" style='background-image: url(img/instagram/instagram-3.jpg);'></a>
+							<a class="instagram-item" href="https://www.instagram.com/" style='background-image: url(img/instagram/instagram-4.jpg);'></a>
+							<a class="instagram-item" href="https://www.instagram.com/" style='background-image: url(img/instagram/instagram-5.jpg);'></a>
+							<a class="instagram-item" href="https://www.instagram.com/" style='background-image: url(img/instagram/instagram-6.jpg);'></a>
+						</div>
+					</div>
+				</div>
+				<!-- instagram END-->
+			</div>
+		</div>
+	</footer>
+	<!-- Footer END -->
+
+	<!-- connection JAVASCRIPT -->
+	<script src="libs/jquery/jquery.min.js"></script>
+	<script src="libs/bootstrap/bootstrap.bundle.min.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+	<script src="libs/slick-lightbox/slick-lightbox.min.js"></script>
+	<script src="libs/countUP/countUp.min.js"></script>
+	<script src="libs/waypoint/jquery.waypoints.min.js"></script>
+	<script src="libs/select2/select2.full.min.js"></script>
+	<script src="libs/datepicker/datepicker.js"></script>
+	<script src="libs/datepicker/datepicker.en.js"></script>
+	<script src="libs/matchHeight/jquery.matchHeight-min.js"></script>
+		
+	<script src="js/common.js"></script>
+
+</body>
+</html>

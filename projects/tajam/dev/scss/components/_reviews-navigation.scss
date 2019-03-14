@@ -1,0 +1,25 @@
+.reviews-navigation {
+	width: 360px;
+	margin: 0 auto;
+	&-picture {
+		transition: 0.5s;
+		height: 72px;
+		transform: scale(0.7);
+		overflow: hidden;
+		@include rbg;
+		border-radius: 50%;
+	}
+}
+
+.slick-center {
+	transform: scale(1);
+}
+
+@media only screen and (max-width: 575px) {
+	.reviews-navigation {
+		width: 200px;
+		&-picture {
+			height: 67px;
+		}
+	}
+}

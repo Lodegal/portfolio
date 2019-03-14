@@ -1,0 +1,33 @@
+.barber {
+	&-photo {
+		width: 100%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		margin-bottom: 35px;
+		&:before {
+			content: '';
+			display: block;
+			padding-bottom: 130%;
+		}
+	}
+
+	&-title {
+		font-family: 'Vani';
+		font-weight: 700;
+		font-size: 1.5rem;
+		text-align: center;
+		margin-bottom: 25px;
+	}
+
+	&-rating {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 25px;
+		&-item {
+			color: $primary;
+			padding: 0px 5px;
+			font-size: 0.9rem;
+		}
+	}
+}

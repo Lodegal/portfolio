@@ -1,0 +1,54 @@
+// Navigation
+#fp-nav ul li,
+.fp-slidesNav ul li {
+    display: block;
+    width: 8px;
+    height: 8px;
+    margin: 8px;
+    position:relative;
+}
+
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span{
+    height: 8px;
+    width: 8px;
+    margin: -4px 0 0 -4px;
+    border-radius: 100%;
+    opacity: 1;
+ }
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    height: 8px;
+    width: 8px;
+    border: 0;
+    background: $white;
+    left: 50%;
+    top: 50%;
+    margin: -4px 0 0 -4px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    opacity: 0.5;
+}
+#fp-nav ul li:hover a span,
+.fp-slidesNav ul li:hover a span{
+    width: 8px;
+    height: 8px;
+    margin: -4px 0px 0px -4px;
+}
+
+.-bgcswap {
+	background: $gray-700 !important;
+}
+
+@media only screen and (max-width: 991px) {
+    .-bgcswap {
+        background: $white !important;
+    }   
+}

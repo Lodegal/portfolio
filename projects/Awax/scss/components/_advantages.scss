@@ -1,0 +1,24 @@
+.advantages {
+	&-icon {
+		text-align: center;
+		margin-bottom: 30px;
+		& img {
+			max-width: 65px;
+			width: 100%;
+		}
+	}
+	
+	&-text {
+		font-family: "Montserrat";
+		font-weight: 300;
+		font-size: 0.9rem;
+		color: $gray-500;
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.advantages {
+		margin-bottom: 30px;
+	}
+}

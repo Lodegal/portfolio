@@ -1,0 +1,36 @@
+.social-list {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	&-item a {
+		display: block;
+		width: 35px;
+		height: 35px;
+		border: 1px solid $white;
+		border-radius: 50%;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-right: 8px;
+		transition:0.3s;
+		& i {
+			color: $white;
+			transition:0.3s;
+			font-size: 15px;
+		}
+		&:hover {
+			text-decoration: none;
+			background-color: $primary;
+			border: 1px solid $primary;
+			& i {
+				color: $secondary;
+			}
+		}
+	}
+}

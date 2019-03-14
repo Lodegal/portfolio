@@ -1,0 +1,28 @@
+.footer-links {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	&-item {
+		margin-right: 30px;
+		& a {
+			font-family: 'Roboto';
+			font-weight: 400;
+			transition: 0.3s;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.footer-links {
+		justify-content: space-around;
+		margin-bottom: 30px;
+		&-item {
+			margin-right: 0px;
+		}
+	}
+}

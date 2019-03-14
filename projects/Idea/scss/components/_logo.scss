@@ -1,0 +1,18 @@
+.logo {
+	font-size: 1.3rem;
+	font-weight: 700;
+	
+	&:hover {
+		text-decoration: none;
+	}
+
+	&.open {
+		color: $white;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.logo:hover {
+		color: $white;
+	}
+}

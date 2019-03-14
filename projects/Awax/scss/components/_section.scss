@@ -1,0 +1,55 @@
+.section {
+	padding: 60px 0;
+
+	&-home {
+		position: relative;	
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;	
+	}
+
+	&-services {
+		background-color: $black;
+	}
+
+	&-team {
+		position: relative;
+		background-image: url(../img/team-bg.jpg);
+		background-position: center;
+		background-size: cover;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: rgba(0,0,0,0.7);
+		}
+	}
+
+	&-clients {
+		padding-top: 60px;
+		padding-bottom: 30px;
+		background-color: $gray-200;
+	}
+
+	&-price {
+		background-color: $gray-200;
+		border-bottom: 2px solid $gray-400;
+	}
+
+	&-facts {
+		background-color: $black;
+	}
+
+	&-contact {
+		border-top: 2px solid $gray-400;
+		background-color: $gray-200;
+	}
+}
+

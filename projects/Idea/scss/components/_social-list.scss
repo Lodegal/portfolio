@@ -1,0 +1,25 @@
+.social-list {
+	display: flex;
+
+	& li {
+		margin-right: 10px;
+	}
+	
+	.social-icon i {
+		font-size: 1rem;
+		transition: 0.3s;
+		&:hover {
+			color: $yellow;
+		}
+	}
+}
+
+
+@media only screen and (max-width: 991px) {
+	.social-list {
+		margin-bottom: 25px;	
+	}
+}
+
+
+

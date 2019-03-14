@@ -1,0 +1,52 @@
+.mobile-navigation {
+	position: fixed;
+	width: 300px;
+	right: -300px;
+	top: 0;
+	bottom: 0;
+	background-color:rgba(0,0,0,0.8);
+	z-index: 12;
+	transition: 0.6s;
+	padding-left: 50px;
+	padding-top: 75px;
+	padding-bottom: 75px;
+	overflow: auto;
+	.nav-link {
+		font-weight: 700;
+		padding: 7px 0;
+	}
+	.active {
+		color: $primary;
+	}
+}
+
+.mobile-navigation-active {
+	right: 0;
+}
+
+.navigation-overlay {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-color:rgba(255,255,255,0);
+	z-index: -1;
+	transition: 0.6s;
+	&-active {
+		z-index: 11;
+		background-color:rgba(255,255,255,0.3);
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.mobile-navigation {
+		display: none;
+	}
+	.navigation-overlay {
+		display: none;
+	}
+	.overflow {
+		overflow: auto;
+	}
+}

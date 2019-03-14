@@ -1,0 +1,52 @@
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+	padding: 20px 20px;
+	z-index: 9999;
+
+	.-colorswap {
+		color: $gray-700;
+	}
+}
+
+.menu-toggle {
+	cursor: pointer;
+	& span {
+		transition: 0.3s;
+		display: block;
+		width: 25px;
+		height: 3px;
+		background-color: $white;
+	}
+
+	& span ~ span {
+		margin-top: 5px;
+	}
+	
+	&.open {
+		.one {
+			background-color: $white !important;
+			transform: (rotate(45deg) translate(6px, 6px));
+		}
+		.two {
+			opacity: 0;
+		}
+		.three {
+			background-color: $white !important;
+			transform: (rotate(-45deg) translate(5px, -6px));
+		}
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.header {
+		background-color: $gray-600;
+		padding: 	7px 20px;
+		.-colorswap {
+			color: $white;
+		}
+	}
+}

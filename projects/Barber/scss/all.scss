@@ -1,0 +1,36 @@
+// MAIN ===============================================
+@import "libs";
+@import "mixins";
+@import "functions";
+@import "fonts";
+@import "reset";
+@import "global";
+@import "helpers";
+
+// COMPONENTS ===============================================
+@import "components/typography";
+@import "components/buttons";
+@import "components/forms";
+@import "components/header";
+@import "components/logo";
+@import "components/contact-icon";
+@import "components/menu";
+@import "components/footer";
+@import "components/section";
+@import "components/section-icon";
+@import "components/section-description";
+@import "components/about-form";
+@import "components/services-form";
+@import "components/barber";
+@import "components/second-slider";
+@import "components/gallery";
+@import "components/prices-form";
+@import "components/_select2";
+@import "components/_datepicker";
+@import "components/_mobile-header";
+@import "components/_mobile-navigation";
+
+@import "components/slick-arrows";
+@import "components/slick-dots";
+@import "components/slick-lightbox-buttons";
+// @import "components/scrollbar-styling";

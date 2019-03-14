@@ -1,0 +1,167 @@
+.filter-nav {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 35px;
+
+	.left-fillet {
+		padding-left: 50px;
+		border-top-left-radius:50px;
+		border-bottom-left-radius:50px;
+	}
+
+	.right-fillet {
+		padding-right: 50px;
+		border-top-right-radius:50px;
+		border-bottom-right-radius:50px;
+	}
+
+	&__link {
+		background-color: $gray-200;
+		overflow: hidden;
+		position: relative;
+		display: block;
+		font-family: "Montserrat";
+		font-weight: 300;
+		color: $black;
+		padding: 20px 25px;
+		border: 1px solid $gray-400;
+		&:after {
+			content: '';
+			position: absolute;
+			display: block;
+			width: 100%;
+			height: 3px;
+			background-color: $primary;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			opacity: 0;
+		}
+
+		&.-active {
+			&:after {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.project-photo {
+	display: block;
+	width: 100%;
+	position: relative;
+	margin-bottom: 30px;
+
+	&:hover .project-photo-overlay {
+		transform: scale(1);
+	}
+
+	&:before {
+		content: '';
+		display: block;
+		padding-bottom: 56.25%;
+	}
+
+	& span {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-position: center;
+		background-size: cover;
+	}
+
+	&-overlay {
+		transform: scale(0);
+		transition: 0.5s;
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.7);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		
+		& p {
+			display: block;
+			max-width: 180px;
+			color: $gray-400;
+		}
+	}
+}
+
+@media only screen and (max-width: 1199px) {
+	.project-photo-overlay p {
+		display: none;
+	}
+	.-project {
+		margin-bottom: 0px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.filter-nav {
+		&__link {
+		padding: 10px 10px;
+		border: 1px solid $gray-400;
+	}
+		.filter-nav__item .left-fillet {
+			padding-left: 25px;
+		}
+		.filter-nav__item .right-fillet {
+			padding-right: 25px;
+		}
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.filter-nav {
+		overflow: hidden;
+		border: 1px solid $gray-400;
+		flex-wrap: wrap;
+				
+		.left-fillet {
+			padding-left: 50px;
+			border-top-left-radius:0px;
+			border-bottom-left-radius:0px;
+		}
+
+		.right-fillet {
+		padding-right: 50px;
+		border-top-right-radius:0px;
+		border-bottom-right-radius:0px;
+		}
+
+		&__item {
+			width: 33.3%;
+		}
+	
+		&__link {
+			width: 100%;
+			text-align: center;
+		}
+
+		.filter-nav__item .left-fillet {
+			padding-left: 10px;
+		}
+
+		.filter-nav__item .right-fillet {
+			padding-right: 10px;
+		}
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.filter-nav__item {
+		width: 50%;
+	}
+
+	.filter-nav__link {
+			font-size: 0.7rem;
+	}
+}

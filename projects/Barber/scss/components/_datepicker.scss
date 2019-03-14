@@ -1,0 +1,13 @@
+.datepicker--cell.-selected- {
+	background-color: $primary;
+	&.-focus- {
+		background-color: $primary;
+	}
+	&.-current- {
+		background-color: $primary;
+	}
+}
+
+.ui-datepicker{
+ width: 100%;
+}

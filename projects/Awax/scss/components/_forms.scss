@@ -1,0 +1,75 @@
+.modal-content form  {
+	background-color: $white;
+	padding: 60px 0;
+	& input {
+		border: none;
+		border-bottom: 1px solid $gray-500;
+		display: block;
+		margin: 0 auto;
+		max-width: 200px;
+		width: 100%;
+		margin-bottom: 20px;
+
+		&[placeholder] {
+			@include placeholder-opacity(1s)
+		}
+
+		&[type=text] {
+			padding: 10px;
+		}
+	}
+}
+
+.connection	{
+	width: 100%;
+	border: none;
+	border-bottom: 	2px solid $gray-600;
+	margin-bottom: 45px;
+	background-color: transparent;
+
+	&[placeholder] {
+			@include placeholder-opacity(1s)
+	}
+	&[type=text] {
+			padding: 10px;
+	}
+}
+
+.subscribe {
+	padding: 50px 15px;	
+	background-color: $gray-700;
+	& input {
+		display: block;	
+		margin: 0 auto;	
+		max-width: 220px;	
+		width: 100%;	
+		border: none;
+		border-bottom: 	2px solid $gray-500;
+		margin-bottom: 45px;
+		background-color: transparent;
+
+		&[placeholder] {
+			color: white;
+			@include placeholder-opacity(1s)
+		}
+
+		&[type=text] {
+			color: $gray-300;
+			padding: 10px;	
+		}
+		&[type=text]::-webkit-input-placeholder {
+			text-align: center;
+			color: $gray-500;
+		}
+		&[type=text]::-moz-placeholder {
+			text-align: center;
+			color: $gray-500;
+		}
+	}	
+}
+
+@media only screen and (max-width: 575px) {
+	.connection	{
+		margin-bottom: 30px;
+	}
+}

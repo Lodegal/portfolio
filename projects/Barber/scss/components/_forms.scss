@@ -1,0 +1,138 @@
+// Search
+form.search input[type=text] {
+	padding: 10px;
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+form.search input[placeholder], form.mobile-search input[placeholder], form.subscribe-form input[placeholder], .appointment-form[placeholder] {
+	@include placeholder-opacity(1s)
+}
+
+.search-term {
+	border: none;
+	border-bottom: 1px solid $primary;
+	width: 80%;
+	background-color: transparent;
+}
+
+.search-button, .mobile-search-button {
+	width: 20%;
+	font-size: 1.3rem;
+	background-color: transparent;
+}
+
+.mobile-search {
+	padding-left: 20px;	
+}
+
+form.mobile-search input[type=text] {
+	padding-left: 5px;	
+	font-size: 1rem;
+	font-weight: bold;
+	color: $white;
+}
+form.mobile-search input::-webkit-input-placeholder {
+	color: $white;
+}
+
+.mobile-search-button {
+	width: 40px;	
+	font-size: 1rem;
+	background-color: transparent;
+	color: $white;
+}
+.mobile-search-term {
+	max-width: 150px;
+	border: none;
+	border-bottom: 1px solid $white;
+	background-color: transparent;
+}
+
+// Search END
+
+// Footer-form
+form.subscribe-form input[type=email] {
+	padding: 15px;
+	font-size: 1rem;
+}
+.subscribe-form {
+	width: 100%;
+	display: flex;		
+}
+.subscribe-form-input {
+	border: none;	
+	width: 80%;	
+}
+.subscribe-form-btn {
+	display: flex;	
+	justify-content: center;	
+	align-items: center;	
+	width: 20%;	
+	background-color: $primary;
+	
+	&:hover i {
+		color: $black;
+	}
+	
+	& i {
+		display: block;	
+		color: $white;
+		transition: 0.5s;
+	}	
+}
+
+// Footer-form END
+
+// Appointment-form
+.group {
+	position: relative;			
+  margin-bottom: 45px;
+  
+  i {
+  position: absolute;
+  top: 0;
+  right: 1px;
+  color: $gray-500;
+  z-index: 9;
+  }
+
+	input, textarea {
+		position: relative;
+		z-index: 10;
+		font-family: 'QuattrocentoSans';
+		font-weight: 400;
+	  font-size: 1rem;
+	  display:block;
+	  width:100%;
+	  padding-left: 10px;
+	  border:none;
+	  border-bottom:1px solid $gray-500;
+	  background-color: transparent;
+	  color: $gray-300;
+	}
+
+	input:focus, select:focus, textarea:focus {
+	  outline:none;
+	}
+
+	label {
+	  color: $gray-500; 
+	  font-size:1rem;
+	  font-weight:normal;
+	  position:absolute;
+	  pointer-events:none;
+	  left:10px;
+	  top:0;
+	  transition:0.2s ease all; 
+	  -moz-transition:0.2s ease all; 
+	  -webkit-transition:0.2s ease all;
+	}
+
+	/* active state */
+	input:focus ~ label, input:valid ~ label, textarea:focus ~ label, textarea:valid ~ label, select:focus ~ label, select:valid ~ label {
+	  top:-20px;
+	  font-size:14px;
+	}
+}
+// Appointment-form END

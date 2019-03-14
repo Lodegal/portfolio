@@ -1,0 +1,13 @@
+.description {
+	font-weight: 300;
+	max-width: 400px;
+	margin-bottom: 25px;
+}
+
+@media only screen and (max-width: 575px) {
+	.description {
+		text-align: center;
+		margin: 0 auto 25px;
+	}
+}
+

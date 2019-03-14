@@ -1,0 +1,35 @@
+.select2-container .select2-selection--single {
+	background-color: transparent;
+	border: none;
+	border-bottom:1px solid $gray-500;
+}
+
+.select2-container--default .select2-selection--single {
+	border-radius: 0px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+	font-family: 'QuattrocentoSans';
+	font-weight: 400;
+  font-size: 1rem;
+  color: $gray-300;
+}
+
+.select2-dropdown {
+	border: none;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+	background-color: $primary;
+	transition: 0.5s;
+}
+
+.select2-results__group {
+	text-align: center;
+	color: $black;
+}
+
+.select2-results__option {
+	text-align: left;
+}
+

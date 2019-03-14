@@ -1,0 +1,20 @@
+.contacts-list {
+	&-item {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		margin-bottom: 25px;
+	}
+	&-icon  {
+		color: $white;
+		font-size: 17px;
+		margin-right: 15px;
+	}
+	&-text {
+		color: $white;
+		max-width: 240px;
+		width: 100%;
+	}
+}

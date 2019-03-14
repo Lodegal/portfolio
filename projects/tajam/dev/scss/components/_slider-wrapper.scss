@@ -1,0 +1,19 @@
+.slider-wrapper {
+	height: 100vh;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+}
+
+.slick-dotted.slick-slider {
+	margin-bottom: 0;
+}
+
+@media only screen and (max-width: 767px) {
+	.slider-wrapper {
+		height: auto;
+	}
+}

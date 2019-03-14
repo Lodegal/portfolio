@@ -1,0 +1,147 @@
+.section {
+	padding: 150px 0;
+	&-welcome{
+		.ms-photo {
+			width: 100%;
+			background-size: cover;
+			background-position: top;
+			height: 100vh;
+			display: flex;
+			align-items: center;
+		
+		  &-first {
+		  	background-image: url(../img/main-slider/wel-sl-1.jpg);
+			}
+			&-second {
+				background-image: url(../img/main-slider/wel-sl-2.jpeg);
+			}	
+		}
+		.ms-content {
+			padding: 150px 0;
+		}	
+	}
+	
+	&-advantages {
+		padding: 60px 0px;
+		position: relative;
+		background-image: url(../img/avantages-bg.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: rgba(32,32,32, 0.8);
+		}
+	}
+
+	&-services {
+		background-image: url(../img/services-bg.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position:  bottom;
+		position: relative;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: rgba(255,255,255, 0.8);
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			background-position:  bottom;
+			top: 300px;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-image: url(../img/services-bg-man.png);
+			background-repeat: no-repeat;
+		}
+	}
+
+	&-appointment {
+		position: relative;
+		background-image: url(../img/appointmen-bg.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position:  bottom;
+		bottom: 0;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: rgba(15,15,15, 0.7);
+		}
+	}
+
+	&-clients {
+		background-image: url(../img/clients-bg.jpg);
+		position: relative;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: rgba(25,25,25, 0.9);
+		}
+	}
+
+	&-portfolio {
+		padding-top: 150px;
+	}
+
+	&-pricing {
+		background-color: $gray-200;
+	}
+}
+// ----------------------------------------------
+@media only screen and (max-width: 1500px) {
+	.section-services {
+		&:after {
+			display: none;
+		}
+	}
+}
+
+@media only screen and (max-width: 1199px) {
+	.section {
+		padding: 100px 0;
+		&-portfolio {
+			padding-top: 100px;
+		}
+	}	
+}	
+
+@media only screen and (max-width: 991px) {
+	.section {
+		padding: 70px 0;
+		&-portfolio {
+			padding-top: 70px;
+		}
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.section {
+		padding: 50px 0;
+		&-portfolio {
+			padding-top: 50px;
+		}
+	}	
+}

@@ -1,0 +1,31 @@
+html {
+
+}
+
+body {
+
+}
+
+.main {
+
+}
+
+.services-content {
+	margin-bottom: 100px;	
+}
+
+.-overflow {
+	overflow: hidden;
+}
+
+@media only screen and (max-width: 991px) {
+	.services-content {
+		margin-bottom: 30px;	
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.application-content {
+	margin: 0 auto;
+	}
+}

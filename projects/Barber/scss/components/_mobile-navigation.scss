@@ -1,0 +1,57 @@
+.mobile-navigation {
+	z-index: 10;
+	padding: 70px 0;
+	transition: 0.5s;
+	position: fixed;
+	z-index: 11;
+	top: 0;
+	right: -240px;
+	bottom: 0;
+	background-color: $primary;
+	width: 240px;
+}
+
+.mobile-navigation-active {
+	overflow: auto;
+	right: 0;
+}
+.mobile-menu {
+	margin-bottom: 40px;	
+	ul {
+		width: 100%;
+	}
+}
+
+.mobile-item {
+	.nav-link {
+		transition: 0.5s;
+		text-align: left;
+		text-transform: uppercase;
+	}
+	.active {
+		background-color: $gray-400;
+		color: $black;
+	}
+}
+
+.mobile-contacts {
+	padding-left: 20px;	
+	.mobile-contact-icon {
+		display: flex;	
+		align-items: center;	
+		justify-content: center;	
+		color: $white;
+	}
+	.mobile-contact-text {
+		color: $white;
+		font-size: 1rem;	
+		margin-left: 10px;	
+	}
+}
+// ------------------------------------------
+
+@media only screen and (min-width: 1250px) {
+	.mobile-navigation {
+		display: none;
+	}
+}

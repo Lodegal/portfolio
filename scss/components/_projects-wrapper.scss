@@ -1,0 +1,12 @@
+.projects-wrapper {
+	width: 100%;
+	&__title {
+		text-align: center;
+		margin-bottom: 40px;
+		opacity: 0.7;
+	}
+	&__links {
+		display: flex;
+		justify-content: space-around;
+	}
+}

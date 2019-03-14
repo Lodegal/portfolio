@@ -1,0 +1,96 @@
+.about-form {
+	padding: 80px 25px;
+	background-color: $gray;
+	border: 1px solid $gray-400;
+	position: relative;
+	
+	&-icon {
+		position: absolute;
+		top: -50px;
+		left: 50%;
+		margin-left: -50px;
+		width: 100px;
+		height: 100px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: $white;
+		border: 2px solid $primary;
+		border-radius: 50%;
+		margin-bottom: 30px;
+		& img {
+			width: 55px;
+			height: 55px;
+			display: block;
+		}
+	}
+
+	&-title {
+		text-align: center;
+		position: relative;
+		font-family: 'Vani';
+		font-weight: 700;
+		color: $gray-900;
+		font-size: 1.25rem;
+		margin-bottom: 50px;
+		&:before {
+			content: '';
+			position: absolute;
+			bottom: -25px;
+			min-width: 100px;
+			height: 2px;
+			background-color: $primary;
+			left: 50%;
+			margin-left: -50px;
+		}
+	}
+
+	&-text {
+		text-align: center;
+	}
+}
+
+// ---------------------------------------------
+@media only screen and (max-width: 1199px) {
+	.about-form {
+		padding: 70px 25px;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.about-form {
+		padding: 70px 15px;
+		margin-bottom: 30px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.about-form {
+		margin-bottom: 0;
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.about-form {
+		padding: 50px 15px;
+
+		&-text {
+			font-size: 1rem;
+		}
+
+		&-title {
+			font-size: 1.1rem;
+		}
+
+		&-icon {
+			width: 70px;
+			height: 70px;
+			top: -35px;
+			margin-left: -35px;
+			& img {
+				width: 35px;
+				height: 35px;
+			}
+		}
+	}
+}

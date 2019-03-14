@@ -1,0 +1,47 @@
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 3;
+	padding: 15px 0px;
+	transition: 0.3s;
+	&.-small-header {
+		background-color: $black;
+		.logo {
+			max-width: 80px;
+		}
+		.navbar {
+			padding: 0 16px;
+		}
+	}
+	.navbar {
+		transition: 0.5s;
+	}
+	.main-menu {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+	}
+	.nav-link {
+		font-family: 'Roboto';
+		font-weight: 900;
+		font-size: 0.8125rem;
+		transition: 0.3s;
+		&.active {
+			color: $primary;
+		}
+	}
+}
+
+@media only screen and (max-width: 991px) {
+  .-main-navbar {
+    display: none;
+  }
+  .header {
+  	background-color: $black;
+  	padding: 10px 0px;
+  }
+}

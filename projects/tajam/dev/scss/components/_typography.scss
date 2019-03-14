@@ -1,0 +1,115 @@
+// MAIN TITLE OF THE SITE
+.main-title {
+	font-family: 'PlayfairDisplay';
+	font-weight: 900;
+	color: $white;
+	text-align: center;
+	margin-bottom: 20px;
+	padding-bottom: 30px;
+	position: relative;
+	&::before {
+		content: '';
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%,0);
+		bottom: 0px;
+		width: 50px;
+		height: 1px;
+		background-color: $primary;
+	}
+}
+.main-description {
+	max-width: 780px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	color: $white;
+	margin-bottom: 60px;
+}
+
+// SECTION TITLE
+.section-title {
+	font-family: 'PlayfairDisplay';
+	font-weight: 700;
+	color: #464250;
+	text-align: center;
+	margin-bottom: 15px;
+	&-about {
+		margin-bottom: 30px;
+		text-align: left;
+	}
+	&-team {
+		color: $white;
+	}
+	&-works {
+		margin-bottom: 0;	
+	}
+	&-contacts {
+		text-align: left;
+		margin-bottom: 35px;
+	}
+}
+
+.section-description {
+	font-family: 'PlayfairDisplay';
+	font-weight: 400;
+	color: #636268;
+	text-align: center;
+	margin-bottom: 50px;
+	padding-bottom: 20px;
+	position: relative;
+	&::before {
+		content: '';
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%,0);
+		bottom: 0px;
+		width: 50px;
+		height: 2px;
+		background-color: #C6C4C9;
+	}
+	&-team {
+		color: #F9F9F9;
+	}
+}
+
+// PAGE TITLE
+.page-title {
+	font-family: 'Roboto';
+	font-weight: 900;
+	color: #413D4B;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.section-about-content  p {
+	margin-bottom: 30px;
+	color: #817F86;
+}
+
+.footer-title {
+	font-family: 'Roboto';
+	font-weight: 900;
+	color: $white;
+	margin-bottom: 40px;
+	padding-top: 20px;
+}
+
+@media only screen and (max-width: 991px) {
+	.section-title-contacts {
+		text-align: center;
+	}	
+}
+@media only screen and (max-width: 767px) {
+	.section-title-about {
+		text-align: center;
+	}
+	.btn {
+		margin: 0 auto;
+	}
+}
+@media only screen and (max-width: 575px) {
+	.section-title-works {
+		margin-bottom: 20px;
+	}
+}

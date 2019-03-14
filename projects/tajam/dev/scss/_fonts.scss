@@ -1,0 +1,11 @@
+/* FONTS ================================================ */
+@include font-face("Roboto", "../fonts/Roboto/Roboto-Black", 900);
+@include font-face("Roboto", "../fonts/Roboto/Roboto-Regular", 400);
+@include font-face("Roboto", "../fonts/Roboto/Roboto-Light", 300);
+@include font-face("Roboto", "../fonts/Roboto/Roboto-Thin", 100);
+
+@include font-face("PlayfairDisplay", "../fonts/PlayfairDisplay/PlayfairDisplay-Black", 900);
+@include font-face("PlayfairDisplay", "../fonts/PlayfairDisplay/PlayfairDisplay-Bold", 700);
+@include font-face("PlayfairDisplay", "../fonts/PlayfairDisplay/PlayfairDisplay-Regular", 400);
+
+@include font-face("HammersmithOne", "../fonts/HammersmithOne/HammersmithOne-Regular", 400);

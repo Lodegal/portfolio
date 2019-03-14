@@ -1,0 +1,47 @@
+.header {
+	transition:0.5s;
+	z-index: 9999;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+}
+
+.first-half {
+	position: relative;
+	height: 100px;
+	background-color: $white;
+	display: flex;
+	align-items: center;
+}
+@media only screen and (max-width: 1250px) {
+	.header {
+		display: none;
+	}
+} 
+.second-half {
+	position: relative;
+	z-index: 10;
+	background-color: rgba(55,55,55, 0.25);
+}
+
+// Hide effect
+.-hide {
+	top: -100px;
+	.second-half {
+		background-color: rgba(0,0,0, 0.8);
+		transition: 1s;
+	}
+	.menu__item {
+		.nav-link {
+			padding: 15px 23px;
+		}
+		.active {
+			background-color: rgba(153,84,55,0.8);
+			border-bottom: 2px solid transparent;
+		}
+	}
+}
+// Hide effect END
+
+

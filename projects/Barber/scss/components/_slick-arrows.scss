@@ -1,0 +1,60 @@
+// MAIN SLIDER
+.slick-prev, .slick-next {
+	width: 60px;
+	height: 60px;
+	background-color: $slick-arrow-bg;
+	z-index: 1;
+	border: 2px solid $primary;
+	border-radius: 50%;
+
+	&:before {
+		transition: 0.5s;
+		font-size: $slick-arrow-size;
+		font-weight: $slick-arrow-weight;
+	}
+
+	&:hover {
+		background-color: $primary;
+		&:before {
+			color: lighten($slick-arrow-color, 50%);
+		}
+	}
+}
+
+.slick-prev {
+	left: 80px;
+}
+
+.slick-next {
+	right: 80px;
+}
+
+.slick-prev:before {
+	content:'\f104';
+}
+
+.slick-next:before {
+	content:'\f105';
+}
+// MAIN SLIDER END
+
+// SECOND SLIDER
+#second-slick-prev, #second-slick-next {
+	width: 55px;
+	height: 55px;
+	border: 1px solid $primary;
+	&:hover {
+		&:before {
+			color: darken($slick-arrow-color, 50%);
+		}
+	}
+}
+
+#second-slick-prev {
+	left: -150px;
+}
+
+#second-slick-next {
+	right: -150px;
+}
+// SECOND SLIDER END

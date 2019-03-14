@@ -1,0 +1,18 @@
+.menu__item {
+	.nav-link {
+	display: block;
+	padding: 28px 23px;
+	border-bottom: 2px solid transparent;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 1.25rem;
+	}
+	.active {
+		background-color: rgba(152,83,54, 0.25);
+		border-bottom: 2px solid $primary;
+	}
+}
+.navbar {
+	padding: 0;
+}
+

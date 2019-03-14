@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Awax</title>
+	<meta name="description" content="Description of the site">
+
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, maximum-scale=1">
+
+	<!-- connection FAVICONS -->
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+
+	<!-- THE BACKGROUND OF THE STATUS-BAR (ON MOBILE) -->
+	<meta name="theme-color" content="#000">
+
+	<!-- connection GOOGLE FONTS -->
+
+	<!-- connection CSS -->
+	<link rel="stylesheet" href="css/all.css">
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar">
+
+	<!-- HEADER -->
+	<header class="header js-header">
+		<div class="container d-flex justify-content-between align-items-center">
+			<a href="#home" class="logo"><img src="img/logo.png" alt="logo"></a>
+			<nav class="navbar js-navbar main-navbar">
+				<ul class="d-flex">
+					<li class="navbar-item"><a class="nav-link" href="#home">HOME</a></li>
+					<li class="navbar-item"><a class="nav-link" href="#about">ABOUT US</a></li>
+					<li class="navbar-item"><a class="nav-link" href="#services">SERVICES</a></li>
+					<li class="navbar-item"><a class="nav-link" href="#projects">OUR PROJECTS</a></li>
+					<li class="navbar-item"><a class="nav-link" href="#team">OUR TEAM</a></li>
+					<li class="navbar-item"><a class="nav-link" href="#clients">HAPPY CLIENTS</a></li>
+					<li class="navbar-item"><a class="nav-link" href="#price">PRICE</a></li>
+					<li class="navbar-item"><a class="nav-link" href="#facts">SOME FACTS</a></li>
+					<li class="navbar-item"><a class="nav-link" href="#contact">CONTACT US</a></li>
+				</ul>
+			</nav>
+			<div class="menu-toggle">
+			  <div class="hamburger">
+			    <span></span>
+			    <span></span>
+			    <span></span>
+			  </div>
+			  <div class="cross">
+			    <span></span>
+			    <span></span>
+			  </div>
+			</div>
+		</div>
+	</header>
+	<!-- HEADER END -->
+
+	<!-- Mobile-navigation-overlay -->
+	<div class="navigation-overlay"></div>
+	<!-- Mobile-navigation-overlay END-->
+
+	<!-- Mobile-navigation -->
+	<div class="mobile-navigation">
+	  <nav class="js-navbar navbar">
+			<ul>
+				<li class="mobile-item"><a class="nav-link" href="#home">HOME</a></li>
+					<li class="mobile-item"><a class="nav-link" href="#about">ABOUT US</a></li>
+					<li class="mobile-item"><a class="nav-link" href="#services">SERVICES</a></li>
+					<li class="mobile-item"><a class="nav-link" href="#projects">OUR PROJECTS</a></li>
+					<li class="mobile-item"><a class="nav-link" href="#team">OUR TEAM</a></li>
+					<li class="mobile-item"><a class="nav-link" href="#clients">HAPPY CLIENTS</a></li>
+					<li class="mobile-item"><a class="nav-link" href="#price">PRICE</a></li>
+					<li class="mobile-item"><a class="nav-link" href="#facts">SOME FACTS</a></li>
+					<li class="mobile-item"><a class="nav-link" href="#contact">CONTACT US</a></li>
+			</ul>
+		</nav>
+	</div>
+	<!-- Mobile-navigation END-->
+
+	<!-- Section-home -->
+	<section class="section-home" id="home">
+		<!-- Home-content -->
+		<div class="container">
+			<div class="main-title"><h1>Design is about <span class="text-primary">communication</span></h1></div>
+			<p class="main-call">call us: +00 0 1234 5678 </p>
+			<button class="btn btn-primary btn-home-slider" style="margin: 0 auto;">GET IN TOUCH!</button>
+		</div>
+		<!-- Home-content END-->
+		<!-- Home-slider -->
+		<div class="js-home-slider home-slider">
+			<div class="home-img" style="background-image: url(img/home-slider/home-slider1.jpg);"></div>
+			<div class="home-img" style="background-image: url(img/home-slider/home-slider2.jpg);"></div>
+			<div class="home-img" style="background-image: url(img/home-slider/home-slider3.jpg);"></div>
+		</div>
+		<!-- Home-slider END-->
+		<!-- Phone-call -->
+		<button class="phone-call" data-toggle="modal" data-target=".bd-example-modal-sm"><img src="img/svg/phone-call.svg" alt="icon"></button>
+		<!-- Phone-call -->
+	</section>
+	<!-- Section-home END-->
+
+	<!-- Modal-window -->
+	<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+	  <div class="modal-dialog modal-sm">
+	  	<div class="modal-content">
+	  		<form>
+					<input type="text" placeholder="NAME">
+					<input type="text" placeholder="+00 0 1234 5678">
+					<button class="btn btn-primary" style="margin: 0 auto;">CALL ME BACK!</button>
+				</form>
+	    </div>
+	  </div>
+	</div>
+	<!-- Modal-window END-->
+
+	<!-- Section-about -->
+	<section class="section section-about" id='about'>
+		<div class="container">
+			<h2 class="section-title">ABOUT US</h2>
+			<p class="description">who we are?</p>
+			<div class="row">
+				<div class="col-md-7">
+					<p style="margin-bottom: 35px;">Praesent metus urna, feugiat a placerat vel, elementum at leo. Quisque vel fermentum ipsum. Nulla at facilisis est, vel condimentum ligula. Mauris volutpat vitae risus sed pellentesque. Praesent fermentum neque ac tellus gravida, at varius sem accumsan. Nam porta erat id sapien consectetur. Fusce sed purus eros. Vivamus rhoncus, ipsum in tempus fermentum, orci leo facilisis purus. Nam porta erat id sapien consectetur. Fusce sed purus eros. Vivamus rhoncus, ipsum in tempus fermentum, orci leo facilisis purus.</p>
+					<button class="btn btn-primary btn-about">learn MORE</button>
+				</div>
+				<div class="col-md-5">
+					<!-- YOUTUBE VIDEO -->
+					<div class="responsive-video">
+						<iframe class="responsive-video__item" src='https://www.youtube.com/embed/52zHCUTh5xw' allowfullscreen></iframe>
+					</div>
+					<!-- YOUTUBE VIDEO END -->
+				</div>		
+			</div>
+		</div>
+	</section>
+	<!-- Section-about END-->
+
+	<!-- Section-services -->
+	<section class="section section-services" id="services">
+		<div class="container">
+			<h2 class="section-title text-white">SERVICES</h2>
+			<p class="description">What we create</p>
+			<div class="row">
+				<div class="col-sm-6 col-lg-3">
+					<div class="advantages">
+						<div class="advantages-icon"><img src="img/svg/badge-with-a-star.svg" alt="svg"></div>
+						<h4 class="page-title">High quality<br>DESIGN</h4>
+						<p class="advantages-text">Praesent metus urna, feugiat a placerat elementum</p>
+					</div>
+				</div>		
+				<div class="col-sm-6 col-lg-3">
+					<div class="advantages">
+						<div class="advantages-icon"><img src="img/svg/star.svg" alt="svg"></div>
+						<h4 class="page-title">modern design</h4>
+						<p class="advantages-text">Praesent metus urna, feugiat a placerat elementum</p>
+					</div>
+				</div>	
+				<div class="col-sm-6 col-lg-3">
+					<div class="advantages">
+						<div class="advantages-icon"><img src="img/svg/clock.svg" alt="svg"></div>
+						<h4 class="page-title">regular updates</h4>
+						<p class="advantages-text">Praesent metus urna, feugiat a placerat elementum</p>
+					</div>
+				</div>	
+				<div class="col-sm-6 col-lg-3">
+					<div class="advantages">
+						<div class="advantages-icon"><img src="img/svg/support.svg" alt="svg"></div>
+						<h4 class="page-title">Fast AND FREE<br>support</h4>
+						<p class="advantages-text">Praesent metus urna, feugiat a placerat elementum</p>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</section>
+	<!-- Section-services END-->
+
+	<!-- Section-projects -->
+	<section class="section section-projects" id="projects">
+		<div class="container">
+			<h2 class="section-title">OUR PROJECTS</h2>
+			<p class="description">What we create</p>
+			<!-- SHUFFLE FILTER -->
+			<div class="js-filter-container">
+				<!-- shuffle navigation -->
+				<ul class="filter-nav">
+					<li class="filter-nav__item">
+						<a class="filter-nav__link -active left-fillet" href="javascript:void(0);" data-group="all">All</a>
+					</li>
+					<li class="filter-nav__item">
+						<a class="filter-nav__link" href="javascript:void(0);" data-group="photos">PHOTOS</a>
+					</li>
+					<li class="filter-nav__item">
+						<a class="filter-nav__link" href="javascript:void(0);" data-group="branding">BRANDING</a>
+					</li>
+					<li class="filter-nav__item">
+						<a class="filter-nav__link" href="javascript:void(0);" data-group="adverts">ADVERTS</a>
+					</li>
+					<li class="filter-nav__item">
+						<a class="filter-nav__link" href="javascript:void(0);" data-group="development">DEVELOPMENT</a>
+					</li>
+					<li class="filter-nav__item">
+						<a class="filter-nav__link right-fillet" href="javascript:void(0);" data-group="misc">MISC</a>
+					</li>
+				</ul>
+				<!-- shuffle navigation END -->
+				<!-- shuffle content -->
+				<div class="row filter-content">
+					<div class="col-sm-4 col-md-3" data-groups='["branding"]'>
+						<a href="#?" class="project-photo">
+							<span style="background-image: url(img/projects/img1.jpg);"></span>			
+							<div class="project-photo-overlay"><h4 class="page-title -project">ABOUT</h4><p>Praesent metus urna, feugiat a placerat elementum at leo</p></div>
+						</a>
+					</div>
+					<div class="col-sm-4 col-md-3" data-groups='["photos"]'>
+						<a href="#?" class="project-photo">
+							<span style="background-image: url(img/projects/img2.jpg);"></span>
+							<div class="project-photo-overlay"><h4 class="page-title -project">ABOUT</h4><p>Praesent metus urna, feugiat a placerat elementum at leo</p></div>
+						</a>
+					</div>
+					<div class="col-sm-4 col-md-3" data-groups='["branding"]'>
+						<a href="#?" class="project-photo">
+							<span style="background-image: url(img/projects/img3.jpg);"></span>
+							<div class="project-photo-overlay"><h4 class="page-title -project">ABOUT</h4><p>Praesent metus urna, feugiat a placerat elementum at leo</p></div>
+						</a>
+					</div>
+					<div class="col-sm-4 col-md-3" data-groups='["adverts"]'>
+						<a href="#?" class="project-photo">
+							<span style="background-image: url(img/projects/img4.jpg);"></span>
+							<div class="project-photo-overlay"><h4 class="page-title -project">ABOUT</h4><p>Praesent metus urna, feugiat a placerat elementum at leo</p></div>
+						</a>
+					</div>
+					<div class="col-sm-4 col-md-3" data-groups='["photos"]'>
+						<a href="#?" class="project-photo">
+							<span style="background-image: url(img/projects/img5.jpg);"></span>
+							<div class="project-photo-overlay"><h4 class="page-title -project">ABOUT</h4><p>Praesent metus urna, feugiat a placerat elementum at leo</p></div>
+						</a>
+					</div>
+					<div class="col-sm-4 col-md-3" data-groups='["development"]'>
+						<a href="#?" class="project-photo">
+							<span style="background-image: url(img/projects/img6.jpg);"></span>
+							<div class="project-photo-overlay"><h4 class="page-title -project">ABOUT</h4><p>Praesent metus urna, feugiat a placerat elementum at leo</p></div>
+						</a>
+					</div>
+					<div class="col-sm-4 col-md-3" data-groups='["development"]'>
+						<a href="#?" class="project-photo">
+							<span style="background-image: url(img/projects/img7.jpg);"></span>
+							<div class="project-photo-overlay"><h4 class="page-title -project">ABOUT</h4><p>Praesent metus urna, feugiat a placerat elementum at leo</p></div>
+						</a>
+					</div>
+					<div class="col-sm-4 col-md-3" data-groups='["photos"]'>
+						<a href="#?" class="project-photo">
+							<span style="background-image: url(img/projects/img8.jpg);"></span>
+							<div class="project-photo-overlay"><h4 class="page-title -project">ABOUT</h4><p>Praesent metus urna, feugiat a placerat elementum at leo</p></div>
+						</a>
+					</div>
+					<div class="col-sm-4 col-md-3" data-groups='["branding"]'>
+						<a href="#?" class="project-photo">
+							<span style="background-image: url(img/projects/img9.jpg);"></span>
+							<div class="project-photo-overlay"><h4 class="page-title -project">ABOUT</h4><p>Praesent metus urna, feugiat a placerat elementum at leo</p></div>
+						</a>
+					</div>
+					<div class="col-sm-4 col-md-3" data-groups='["misc"]'>
+						<a href="#?" class="project-photo">
+							<span style="background-image: url(img/projects/img10.jpg);"></span>
+							<div class="project-photo-overlay"><h4 class="page-title -project">ABOUT</h4><p>Praesent metus urna, feugiat a placerat elementum at leo</p></div>
+						</a>
+					</div>
+					<div class="col-sm-4 col-md-3" data-groups='["branding"]'>
+						<a href="#?" class="project-photo">
+							<span style="background-image: url(img/projects/img11.jpg);"></span>
+							<div class="project-photo-overlay"><h4 class="page-title -project">ABOUT</h4><p>Praesent metus urna, feugiat a placerat elementum at leo</p></div>
+						</a>
+					</div>
+					<div class="col-sm-4 col-md-3" data-groups='["development"]'>
+						<a href="#?" class="project-photo">
+							<span style="background-image: url(img/projects/img12.jpg);"></span>
+							<div class="project-photo-overlay"><h4 class="page-title -project">ABOUT</h4><p>Praesent metus urna, feugiat a placerat elementum at leo</p></div>
+						</a>
+					</div>
+
+				</div>
+				<!-- shuffle content END -->
+			</div>
+			<!-- SHUFFLE FILTER END -->
+			<button class="btn btn-primary" style="margin: 0 auto;">MORE PROJECTS</button>
+		</div>
+	</section>
+	<!-- Section-projects END-->
+
+	<!-- Section-team -->
+	<section class="section section-team" id="team">
+		<div class="container">
+			<h2 class="section-title text-white">OUR TEAM</h2>
+			<p class="description">our co-workers</p>
+			<div class="row d-flex justify-content-center">
+				<div class="col-sm-8 col-md-6 col-lg-4">
+					<div class="member">
+						<div class="member-photo"><img src="img/member/member1.jpg" alt="photo"></div>
+						<p class="member-name">JANE DOE</p>
+						<p class="member-job">Master mind</p>
+						<div class="social-list">
+							<a href="#?" class="social-list-circle"><i class="fab fa-twitter"></i></a>
+							<a href="#?" class="social-list-circle"><i class="fab fa-instagram"></i></a>
+							<a href="#?" class="social-list-circle"><i class="fab fa-linkedin-in"></i></a>
+							<a href="#?" class="social-list-circle"><i class="fab fa-youtube"></i></a>
+							<a href="#?" class="social-list-circle"><i class="fab fa-google-plus-g"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-8 col-md-6 col-lg-4">
+					<div class="member">
+						<div class="member-photo"><img src="img/member/member2.jpg" alt="photo"></div>
+						<p class="member-name">MIKE SHILLER</p>
+						<p class="member-job">Creative head</p>
+						<div class="social-list">
+							<a href="#?" class="social-list-circle"><i class="fab fa-twitter"></i></a>
+							<a href="#?" class="social-list-circle"><i class="fab fa-instagram"></i></a>
+							<a href="#?" class="social-list-circle"><i class="fab fa-linkedin-in"></i></a>
+							<a href="#?" class="social-list-circle"><i class="fab fa-youtube"></i></a>
+							<a href="#?" class="social-list-circle"><i class="fab fa-google-plus-g"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-8 col-md-6 col-lg-4">
+					<div class="member">
+						<div class="member-photo"><img src="img/member/member3.jpg" alt="photo"></div>
+						<p class="member-name">ANNA JOHNS</p>
+						<p class="member-job">Technical lead</p>
+						<div class="social-list">
+							<a href="#?" class="social-list-circle"><i class="fab fa-twitter"></i></a>
+							<a href="#?" class="social-list-circle"><i class="fab fa-instagram"></i></a>
+							<a href="#?" class="social-list-circle"><i class="fab fa-linkedin-in"></i></a>
+							<a href="#?" class="social-list-circle"><i class="fab fa-youtube"></i></a>
+							<a href="#?" class="social-list-circle"><i class="fab fa-google-plus-g"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Section-team END-->
+
+	<!-- Section-clients -->
+	<section class="section-clients" id="clients">
+		<div class="container">
+			<h2 class="section-title">HAPPY CLIENTS</h2>
+			<p class="description">client reviews</p>
+			<div class="clients-slider js-clients-slider">
+				<div class="review">
+					<div class="review-photo"><img src="img/review/review1.jpg" alt="photo"></div>
+					<p class="review-name">John Doe</p>
+					<p class="review-job">Head of PR Departament</p>
+					<div class="review-icon"><img src="img/svg/left-quote.svg" alt="icon"></div>
+					<p class="review-text">Praesent metus urna, feugiat a placerat vel, elementum at leo. Quisque vel fermentum ipsum. Nulla at facilisis est, vel condimentum ligula. consectetur. Fusce sed purus eros. Vivamus rhoncus, ipsum in tempus fermentum, orci leo facilisis purus</p>
+				</div>
+				<div class="review">
+					<div class="review-photo"><img src="img/review/review1.jpg" alt="photo"></div>
+					<p class="review-name">John Doe</p>
+					<p class="review-job">Head of PR Departament</p>
+					<div class="review-icon"><img src="img/svg/left-quote.svg" alt="icon"></div>
+					<p class="review-text">Praesent metus urna, feugiat a placerat vel, elementum at leo. Quisque vel fermentum ipsum. Nulla at facilisis est, vel condimentum ligula. consectetur. Fusce sed purus eros. Vivamus rhoncus, ipsum in tempus fermentum, orci leo facilisis purus</p>
+				</div>
+				<div class="review">
+					<div class="review-photo"><img src="img/review/review1.jpg" alt="photo"></div>
+					<p class="review-name">John Doe</p>
+					<p class="review-job">Head of PR Departament</p>
+					<div class="review-icon"><img src="img/svg/left-quote.svg" alt="icon"></div>
+					<p class="review-text">Praesent metus urna, feugiat a placerat vel, elementum at leo. Quisque vel fermentum ipsum. Nulla at facilisis est, vel condimentum ligula. consectetur. Fusce sed purus eros. Vivamus rhoncus, ipsum in tempus fermentum, orci leo facilisis purus</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Section-clients END-->
+
+	<!-- Clients-logos -->
+	<div class="clients-logos">
+		<div class="container">
+			<div class="row">
+				<div class="col-4 col-sm-2">
+					<div class="clients-logos-block"><img src="img/clients-logos/logo1.png" alt="logo"></div>
+				</div>
+				<div class="col-4 col-sm-2">
+					<div class="clients-logos-block"><img src="img/clients-logos/logo2.png" alt="logo"></div>
+				</div>
+				<div class="col-4 col-sm-2">
+					<div class="clients-logos-block"><img src="img/clients-logos/logo3.png" alt="logo"></div>
+				</div>
+				<div class="col-4 col-sm-2">
+					<div class="clients-logos-block"><img src="img/clients-logos/logo4.png" alt="logo"></div>
+				</div>
+				<div class="col-4 col-sm-2">
+					<div class="clients-logos-block"><img src="img/clients-logos/logo5.png" alt="logo"></div>
+				</div>
+				<div class="col-4 col-sm-2">
+					<div class="clients-logos-block"><img src="img/clients-logos/logo6.png" alt="logo"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Clients-logos END-->
+
+	<!-- Section-price -->
+	<section class="section section-price" id="price">
+		<div class="container">
+			<h2 class="section-title">PRICE</h2>
+			<p class="description">pricing table</p>
+			<div class="row">
+				<div class="col-sm-6 col-lg-3">
+					<div class="pricing-table">
+						<span class="service">express</span>
+						<span class="service-price">$9.99</span>
+						<p class="service-month">/ month</p>
+						<ul class="service-types">
+							<li class="service-types-item">
+								<p>Tracking issues</p>
+							</li>
+							<li class="service-types-item">
+								<p>Add bugs through email</p>
+							</li>
+							<li class="service-types-item">
+								<p>Notifications</p>
+							</li>
+							<li class="service-types-item">
+								<p>Time tracking</p>
+							</li>
+							<li class="service-types-item">
+								<p>Custom views</p>
+							</li>
+						</ul>
+						<button class="btn btn-secondary" style="margin: 0 auto;">CHOOSE</button>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3">
+					<div class="pricing-table">
+						<span class="service">standart</span>
+						<span class="service-price">$14.99</span>
+						<p class="service-month">/ month</p>
+						<ul class="service-types">
+							<li class="service-types-item">
+								<p>Tracking issues</p>
+							</li>
+							<li class="service-types-item">
+								<p>Add bugs through email</p>
+							</li>
+							<li class="service-types-item">
+								<p>Notifications</p>
+							</li>
+							<li class="service-types-item">
+								<p>Time tracking</p>
+							</li>
+							<li class="service-types-item">
+								<p>Custom views</p>
+							</li>
+						</ul>
+						<button class="btn btn-secondary" style="margin: 0 auto;">CHOOSE</button>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3">
+					<div class="pricing-table">
+						<span class="service">luxe</span>
+						<span class="service-price">$19.99</span>
+						<p class="service-month">/ month</p>
+						<ul class="service-types">
+							<li class="service-types-item">
+								<p>Tracking issues</p>
+							</li>
+							<li class="service-types-item">
+								<p>Add bugs through email</p>
+							</li>
+							<li class="service-types-item">
+								<p>Notifications</p>
+							</li>
+							<li class="service-types-item">
+								<p>Time tracking</p>
+							</li>
+							<li class="service-types-item">
+								<p>Custom views</p>
+							</li>
+						</ul>
+						<button class="btn btn-secondary" style="margin: 0 auto;">CHOOSE</button>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3">
+					<div class="pricing-table">
+						<span class="service">premium</span>
+						<span class="service-price">$24.99</span>
+						<p class="service-month">/ month</p>
+						<ul class="service-types">
+							<li class="service-types-item">
+								<p>Tracking issues</p>
+							</li>
+							<li class="service-types-item">
+								<p>Add bugs through email</p>
+							</li>
+							<li class="service-types-item">
+								<p>Notifications</p>
+							</li>
+							<li class="service-types-item">
+								<p>Time tracking</p>
+							</li>
+							<li class="service-types-item">
+								<p>Custom views</p>
+							</li>
+						</ul>
+						<button class="btn btn-primary" style="margin: 0 auto;">CHOOSE</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Section-price END-->
+
+	<!-- Section-pricing-plans -->
+	<section class="section section-pricing-plans">
+		<div class="container">
+			<div class="pricing-plans-slider js-pricing-plans-slider">
+				<div class="plan">
+					<h2 class="section-title">PREMIUM</h2>
+					<p class="description">Even More Features Available</p>
+					<div class="row d-flex justify-content-center">
+						<div class="col-md-4">
+							<div class="pricing-plans-photo"><img src="img/premium-plan-photo.png" alt="photo"></div>
+						</div>
+						<div class="col-md-6">
+							<div class="pricing-plans-text">
+								<div class="features">
+									<div class="features-icon"><img src="img/features-icon.png" alt="icon"></div>
+									<div class="features-text">
+										<h3 class="features-title">first feature</h3>
+										<p>Praesent metus urna, feugiat a placerat vel, elementum at leo.<br> Quisque vel fermentum ipsum. Nulla at facilisis est.</p>
+										<ul>
+											<li>
+												<p>— FEATURE ONE</p>
+											</li>
+											<li>
+												<p>— FEATURE TWO</p>
+											</li>
+											<li>
+												<p>— FEATURE THREE</p>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="features">
+									<div class="features-icon"><img src="img/features-icon.png" alt="icon"></div>
+									<div class="features-text">
+										<h3 class="features-title">second feature</h3>
+										<p>Praesent metus urna, feugiat a placerat vel</p>
+									</div>
+								</div>
+								<div class="features">
+									<div class="features-icon"><img src="img/features-icon.png" alt="icon"></div>
+									<div class="features-text">
+										<h3 class="features-title">third feature</h3>
+										<p>Praesent metus urna, feugiat a placerat vel, elementum at leo.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="plan">
+					<h2 class="section-title">STANDART</h2>
+					<p class="description">Even More Features Available</p>
+					<div class="row d-flex justify-content-center">
+						<div class="col-md-4">
+							<div class="pricing-plans-photo"><img src="img/premium-plan-photo.png" alt="photo"></div>
+						</div>
+						<div class="col-md-6">
+							<div class="pricing-plans-text">
+								<div class="features">
+									<div class="features-icon"><img src="img/features-icon.png" alt="icon"></div>
+									<div class="features-text">
+										<h3 class="features-title">first feature</h3>
+										<p>Praesent metus urna, feugiat a placerat vel, elementum at leo.<br> Quisque vel fermentum ipsum. Nulla at facilisis est.</p>
+										<ul>
+											<li>
+												<p>— FEATURE ONE</p>
+											</li>
+											<li>
+												<p>— FEATURE TWO</p>
+											</li>
+											<li>
+												<p>— FEATURE THREE</p>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="features">
+									<div class="features-icon"><img src="img/features-icon.png" alt="icon"></div>
+									<div class="features-text">
+										<h3 class="features-title">second feature</h3>
+										<p>Praesent metus urna, feugiat a placerat vel</p>
+									</div>
+								</div>
+								<div class="features">
+									<div class="features-icon"><img src="img/features-icon.png" alt="icon"></div>
+									<div class="features-text">
+										<h3 class="features-title">third feature</h3>
+										<p>Praesent metus urna, feugiat a placerat vel, elementum at leo.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="plan">
+					<h2 class="section-title">LUXE</h2>
+					<p class="description">Even More Features Available</p>
+					<div class="row d-flex justify-content-center">
+						<div class="col-md-4">
+							<div class="pricing-plans-photo"><img src="img/premium-plan-photo.png" alt="photo"></div>
+						</div>
+						<div class="col-md-6">
+							<div class="pricing-plans-text">
+								<div class="features">
+									<div class="features-icon"><img src="img/features-icon.png" alt="icon"></div>
+									<div class="features-text">
+										<h3 class="features-title">first feature</h3>
+										<p>Praesent metus urna, feugiat a placerat vel, elementum at leo.<br> Quisque vel fermentum ipsum. Nulla at facilisis est.</p>
+										<ul>
+											<li>
+												<p>— FEATURE ONE</p>
+											</li>
+											<li>
+												<p>— FEATURE TWO</p>
+											</li>
+											<li>
+												<p>— FEATURE THREE</p>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="features">
+									<div class="features-icon"><img src="img/features-icon.png" alt="icon"></div>
+									<div class="features-text">
+										<h3 class="features-title">second feature</h3>
+										<p>Praesent metus urna, feugiat a placerat vel</p>
+									</div>
+								</div>
+								<div class="features">
+									<div class="features-icon"><img src="img/features-icon.png" alt="icon"></div>
+									<div class="features-text">
+										<h3 class="features-title">third feature</h3>
+										<p>Praesent metus urna, feugiat a placerat vel, elementum at leo.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button class="btn btn-primary" style="margin: 40px auto 0;">GET IN TOUCH</button>
+		</div>
+	</section>
+	<!-- Section-pricing-plans END-->
+
+	<!-- Section-facts -->
+	<section class="section section-facts" id="facts">
+		<div class="container">
+			<h2 class="section-title text-white">SOME FACTS</h2>
+			<p class="description">about our work</p>
+			<div class="row">
+				<div class="col-sm-6 col-lg-3">
+					<div class="fact">
+						<span class="fact-number">1000</span>
+						<h4 class="page-title">DESIGN projects Released</h4>
+						<p class="advantages-text">Praesent metus urna, feugiat a placerat elementum at leo</p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3">
+					<div class="fact">
+						<span class="fact-number">900</span>
+						<h4 class="page-title">PHOTOs</h4>
+						<p class="advantages-text">Praesent metus urna, feugiat a placerat elementum at leo</p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3">
+					<div class="fact">
+						<span class="fact-number">500</span>
+						<h4 class="page-title">marketing ideas</h4>
+						<p class="advantages-text">Praesent metus urna, feugiat a placerat elementum at leo</p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3">
+					<div class="fact">
+						<span class="fact-number">100</span>
+						<h4 class="page-title">EXHIBITIONS</h4>
+						<p class="advantages-text">Praesent metus urna, feugiat a placerat elementum at leo</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Section-facts END-->
+
+	<!-- Share -->
+	<div class="share">
+		<div class="container d-flex justify-content-center">
+			<div class="share-text-img"><img src="img/svg/share.svg" alt="icon"></div>
+			<p class="share-text share-title">TELL ABOUT US:</p>
+			<ul class="share-social-list">
+				<li>
+					<a href="#?" class="share-icons-circle -twitter"><i class="fab fa-twitter"></i></a>
+					<p class="share-text -icon-text">152</p>
+				</li>
+				<li>
+					<a href="#?" class="share-icons-circle -instagram"><i class="fab fa-instagram"></i></a>
+					<p class="share-text -icon-text">110</p>
+				</li>
+				<li>
+					<a href="#?" class="share-icons-circle -linkedin"><i class="fab fa-linkedin-in"></i></a>
+					<p class="share-text -icon-text">30</p>
+				</li>
+				<li>
+					<a href="#?" class="share-icons-circle -google"><i class="fab fa-google-plus-g"></i></a>
+					<p class="share-text -icon-text">57</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- Share END-->
+	
+	<!-- Section-contact -->
+	<section class="section section-contact" id="contact">
+		<div class="container">
+			<h2 class="section-title">CONTACT US</h2>
+			<p class="description">our agency located in Melbourne, Australia</p>
+			<form >
+				<div class="row d-flex justify-content-center">
+					<div class="col-lg-3"><input class="connection" type="text" placeholder="NAME"></div>
+					<div class="col-lg-3"><input class="connection" type="text" placeholder="EMAIL"></div>
+					<div class="w-100"></div>
+					<div class="col-lg-6"><input class="connection" type="text" placeholder="SUBJECT"></div>
+					<div class="w-100"></div>
+					<div class="col-lg-6"><textarea class="connection" type="text" cols="30" rows="3" placeholder="MESSAGE"></textarea></div>
+				</div>
+				<button class="btn btn-primary" style="margin: 0 auto;">SEND MESSAGE</button>
+			</form>
+		</div>
+	</section>
+	<!-- Section-contact END-->
+	
+	<!-- FOOTER -->
+	<footer class="footer">
+		<a href="#home" class="up-arrow js-up-arrow"><img src="img/svg/up-arrow.svg" alt="icon"></a>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2 col-lg-4">
+					<div class="footer-social-list">
+						<a href="#?" class="footer-social-list-circle"><i class="fab fa-twitter"></i></a>
+						<a href="#?" class="footer-social-list-circle"><i class="fab fa-instagram"></i></a>
+						<a href="#?" class="footer-social-list-circle"><i class="fab fa-linkedin-in"></i></a>
+						<a href="#?" class="footer-social-list-circle"><i class="fab fa-youtube"></i></a>
+						<a href="#?" class="footer-social-list-circle"><i class="fab fa-google-plus-g"></i></a>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<p class="footer-text">Nulla iaculis enim a magna tempor congue. Sed aliquam dignissim hendrerit. Duis erat nulla, pellentesque at enim in, scelerisque placerat nunc. Nulla vestibulum ex sed neque auctor rutrum. Donec fringilla tincidunt aliquet. Nullam rhoncus urna massa, vulputate congue velit pulvinar suscipit. Mauris laoreet blandit pharetra. Suspendisse rutrum dolor at augue convallis, eget dapibus nunc consequat. Sed diam nulla, elementum non laoreet eu,vulputate urna, at pellentesque risus orci in ante.</p>
+				</div>
+				<div class="col-md-4">
+					<form class="subscribe">
+						<input type="text" placeholder="EMAIL TO SUBSCRIBE">
+						<button class="btn btn-primary" style="margin: 0 auto;">SUBSCRIBE</button>		
+					</form>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- FOOTER END -->
+
+	<!-- connection JAVASCRIPT -->
+	<script src="libs/jquery/jquery.min.js"></script>
+	<script src="libs/bootstrap/bootstrap.bundle.min.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+	<script src="libs/slick-lightbox/slick-lightbox.min.js"></script>
+	<script src="libs/@babel/polyfill/dist/polyfill.min.js"></script>
+	<script src="libs/shuffle/shuffle.min.js"></script>
+	<script src="libs/matchHeight/jquery.matchHeight-min.js"></script>
+	<script src="libs/autohidingnavbar/jquery.bootstrap-autohidingnavbar.min.js"></script>
+
+	<script src="js/common.js"></script>
+
+</body>
+</html>

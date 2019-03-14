@@ -1,0 +1,50 @@
+.section-icon {
+	position: relative;
+	margin: 0 auto;
+	width: 70px;
+	height: 70px;
+	background-image: url(../img/svg/hair-style-badge-with-a-mustache.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-bottom: 10px;
+	
+	&:before	{
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: -120px;
+		height: 1px;
+		width: 90px;
+		background-color: $primary;
+		display: block;
+	}
+
+	&:after	{
+		content: '';
+		position: absolute;
+		top: 50%;
+		right: -120px;
+		height: 1px;
+		width: 90px;
+		background-color: $primary;
+		display: block;
+	}
+}
+// ----------------------------------------
+
+@media only screen and (max-width: 800px) {
+	.section-icon {
+		width: 45px;
+		height: 45px;
+		&:before {
+			left: -80px;
+		}
+		&:after {
+			right: -80px;
+		}
+		&:before, &:after {
+			width: 70px;
+		}
+	}
+}

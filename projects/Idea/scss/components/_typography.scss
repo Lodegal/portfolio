@@ -1,0 +1,53 @@
+h1, h2 , h3 {
+	font-family: "Montserrat";
+	font-weight: 700;
+}
+
+// MAIN TITLE OF THE SITE
+.main-title {
+	max-width: 605px;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 25px;
+}
+
+// SECTION TITLE
+.section-title {
+	margin-bottom: 25px;
+}
+
+@media only screen and (max-width: 1199px) {
+	.page-title {
+		margin-bottom: 30px;	
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.main-title {
+		font-size: 3.5rem;
+	}
+	.section-title, .page-title {
+		font-size: 3rem;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.main-title {
+		font-size: 3rem;
+	}
+	.section-title, .page-title {
+		font-size: 2.5rem;
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.main-title {
+		font-size: 2rem;
+	}
+	.section-title, .page-title {
+		text-align: center;
+		font-size: 1.7rem;
+	}
+}
+
+

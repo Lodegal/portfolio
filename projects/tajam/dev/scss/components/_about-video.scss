@@ -1,0 +1,42 @@
+.about-video {
+	width: 100%;
+	padding-top: 200px;
+	padding-bottom: 200px;
+	background-image: url(../img/play-video-bg.jpg);
+	@include rbg;
+	position: relative;
+}
+
+.play-button-area {
+	position: relative;
+}
+
+.play-button {
+	display: block;
+	max-width: 100px;
+	width: 100%;
+	background-color: transparent;
+	margin: 0 auto 30px;
+	&:hover {
+		& img {
+			transform: scale(1.2);
+		}
+	}
+	& img {
+		transition: 0.3s;
+		width: 100%;
+		height: auto;
+	}
+}
+
+.play-button-text {
+	font-family: 'Roboto';
+	font-weight: 900;
+	font-size: 1rem;
+	color: $white;
+	text-align: center;
+	transition: 0.3s;
+	&.-hover {
+		color: $primary;
+	}
+}

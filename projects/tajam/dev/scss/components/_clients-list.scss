@@ -1,0 +1,35 @@
+.clients-list {
+	padding-top: 15px;
+	&-item {
+		width: 100%;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 45px;
+	}
+	&-img {
+		max-width: 160px;
+		width: 100%;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.clients-list {
+		&-item {
+			justify-content: space-around;
+		}
+		&-img {
+			max-width: 130px;
+		}
+	}
+}

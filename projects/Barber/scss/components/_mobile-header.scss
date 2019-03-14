@@ -1,0 +1,47 @@
+.mobile-header {
+	z-index: 9999;
+	top: 0;
+	height: 41px;
+	width: 100%;
+	background-color: rgba(133,64,35, 1);
+	display: flex;	
+	align-items: center;	
+}
+
+.menu-toggle {
+	padding: 5px 0;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	& div ~ div {
+		margin-top: 7px;	
+	}	
+	&.on {
+		.one {
+			transform: (rotate(45deg) translate(7px, 6px));
+		}
+		.two {
+			opacity: 0;
+		}
+		.three {
+			transform: (rotate(-45deg) translate(7px, -6px));
+		}
+	}
+}
+
+.one, .two, .three {
+	backface-visibility: hidden;
+	width: 100%;
+	height: 2px;	
+	background-color: $white;	
+	transition: 0.5s;
+}
+// ------------------------------------------
+
+@media only screen and (min-width: 1250px) {
+	.mobile-header {
+		display: none;
+	}
+}
+
+

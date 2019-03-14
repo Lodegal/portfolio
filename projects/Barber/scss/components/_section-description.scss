@@ -1,0 +1,47 @@
+.section-description {
+	position: relative;
+	z-index: 10;
+	max-width: 555px;
+	margin: 0 auto;
+	margin-bottom: 110px;
+
+	&-services {
+		margin-bottom: 190px;
+	}
+
+	&-appointment {
+		margin-bottom: 80px;
+	}
+
+	&-barbers {
+		margin-bottom: 55px;
+	}
+
+	&-clients {
+		margin-bottom: 55px;
+	}
+
+	p {
+	text-align: center;
+	font-weight: 400;
+	font-size: 1.25rem;
+	}
+}
+// -----------------------------------------
+
+@media only screen and (max-width: 1500px) {
+	.section-description {
+		&-services {
+		margin-bottom: 100px;
+		}
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.section-description {
+		margin-bottom: 60px;
+		p {
+			font-size: 1.1rem;
+		}
+	}
+}

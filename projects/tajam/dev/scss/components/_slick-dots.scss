@@ -1,0 +1,55 @@
+.slick-dots {
+	bottom: 70px;
+
+	li {
+		width: $slick-dots-width;
+		height: $slick-dots-height;
+		margin: 0 $slick-dots-margin-left-right;
+		&.slick-active {
+			button {
+				&:before {
+					border: 1px solid $primary;
+					background-color: $primary;
+				}
+			}
+		}
+		button {
+			width: $slick-dots-width;
+			height: $slick-dots-height;
+			padding: 0;
+			&:before {
+				border: 1px solid #BAB9BC;
+				border-radius: 50%;
+				color: transparent;
+				transition: 0.5s;
+				width: auto;
+				height: auto;
+				line-height: 1;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				font-weight: $slick-dots-weigth;
+			}
+		}
+	}
+
+	li:not(.slick-active) {
+		button {
+			&:hover {
+				&:before {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: 1199px) {
+	.slick-dots {
+		bottom: 40px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.slick-dots {
+		bottom: -50px;
+	}
+}

@@ -1,0 +1,72 @@
+.section {
+	background-size: cover;
+	background-position: center;
+		
+	&-home {
+		background-image: url(../img/section-bg/home.jpg);
+	}
+
+	&-about {
+		position: relative;
+		background-image: url(../img/section-bg/about.jpeg);
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			display: block;
+			background-color: $white;
+			opacity: 0;
+		}
+	}
+
+	&-application {
+		position: relative;
+		background-image: url(../img/section-bg/application.jpeg);
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			display: block;
+			background-color: $black;
+			opacity: 0.4;
+		}
+	}
+
+	&-services {
+		background-color: #323c6d;
+	}
+
+	&-contact {
+		position: relative;
+		background-image: url(../img/section-bg/contact.jpeg);
+		
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			display: block;
+			background-color: $black;
+			opacity: 0.6;
+		}
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.section-about {
+		background-position: right;
+		&:before {
+			opacity: 	0.8;
+		}
+	}
+}

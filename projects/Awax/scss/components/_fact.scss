@@ -1,0 +1,27 @@
+.fact-number {
+	position: relative;
+	display: block;
+	color: $primary;
+	text-align: center;
+	font-weight: 700;
+	font-size: 3rem;
+	padding-bottom: 7px;
+	margin-bottom: 7px;
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		margin-left: -10px;
+		width: 20px;
+		height: 3px;
+		background-color: $gray-500;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.fact {
+		margin-bottom: 30px;
+	}
+}

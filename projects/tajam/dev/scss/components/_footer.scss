@@ -1,0 +1,8 @@
+.footer {
+	@include rbg;
+	position: relative;
+	background-image: url(../img/footer-bg.jpg);
+}
+.footer-main-content {
+	margin-bottom: 70px;
+}

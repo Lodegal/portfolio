@@ -1,0 +1,21 @@
+// Slider button
+.btn {
+	position: relative;
+	z-index: 10;
+	font-weight: 400;
+	font-size: 1.875rem;
+}
+// Slider button END
+
+// ----------------------------------------
+@media only screen and (max-width: 991px) {
+	.btn {
+		font-size: 1.3rem;
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.btn {
+		font-size: 1rem;
+	}
+}

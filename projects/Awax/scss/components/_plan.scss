@@ -1,0 +1,36 @@
+.plan {
+	border-bottom: 1px solid $gray-500;
+	margin-bottom: 40px;
+}
+
+.pricing-plans-text {
+	padding-left: 20px;
+}
+.features {
+	display: flex;
+	margin-bottom: 30px;
+
+	&-icon {
+		max-width: 34px;
+	}
+
+	&-title {
+		font-weight: 700;
+		font-size: 1.5rem;
+		text-transform: uppercase;
+		margin-bottom: 15px;
+	}
+
+	&-text {
+		padding-left: 20px;
+		& p {
+			font-weight: 300;
+		}
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.pricing-plans-photo {
+		display: none;
+	}
+}

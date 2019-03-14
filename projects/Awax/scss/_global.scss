@@ -1,0 +1,50 @@
+html {
+
+}
+
+body {
+
+}
+
+.main-call {
+	font-family: "Montserrat";
+	font-weight: 600;
+	color: $white;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 575px) {
+	.main-call {
+		font-size: 1.125rem;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.main-call {
+		margin-bottom: 0px;
+	}
+}
+
+.overlay {
+	transition: 0.5s;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0);
+	z-index: -1;
+}
+
+.overlay-active {
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 14;
+}
+
+
+.overflow {
+	overflow: hidden;
+}
+

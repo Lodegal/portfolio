@@ -1,0 +1,15 @@
+.description {
+	position: relative;
+	z-index: 1;
+	text-transform: uppercase;
+	font-weight: 600;
+	text-align: center;
+	color: $gray-500;
+	margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 575px) {
+	.description {
+		margin-bottom: 30px;
+	}
+}

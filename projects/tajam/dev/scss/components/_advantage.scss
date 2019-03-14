@@ -1,0 +1,50 @@
+.advantage {
+	padding: 40px 40px;
+	&-img {
+		width: 50px;
+		height: 50px;
+		margin: 0 auto 30px;
+		& img {
+			width: auto;
+			height: 100%;
+		}
+	}
+	&-text {
+		text-align: center;
+	}
+}
+
+.advantage-list .row > div:nth-child(3n+2){
+	border-left: 1px solid #EBEBEB;
+	border-right: 1px solid #EBEBEB;
+}
+
+.advantage-list .row > div {
+	border-bottom: 1px solid #EBEBEB;
+}	
+
+.advantage-list .row > div:nth-last-child(1), .advantage-list .row > div:nth-last-child(2), .advantage-list .row > div:nth-last-child(3) {
+	border-bottom: none;
+}
+
+@media only screen and (max-width: 991px) {
+	.advantage-list .row > div:nth-child(3n+2){
+		border-left: none;
+		border-right: none;
+	}
+	.advantage-list .row > div:nth-child(2n){
+		border-left: 1px solid #EBEBEB;
+	}
+	.advantage-list .row > div:nth-last-child(3) {
+		border-bottom: 1px solid #EBEBEB;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.advantage-list .row > div:nth-child(2n){
+		border-left: none;
+	}
+	.advantage-list .row > div:nth-last-child(2) {
+		border-bottom: 1px solid #EBEBEB;
+	}
+}

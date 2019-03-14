@@ -1,0 +1,41 @@
+.prices-block {
+	padding: 20px 0;
+	color: $white;
+	text-align: center;
+}
+
+.service-list {
+	padding: 30px 15px;
+	background-color: $white;
+	border-left: 1px solid $gray-400;
+	border-right:: 1px solid $gray-400;
+}
+
+.prices-item {
+	padding: 7px 0;
+
+}
+
+.price {
+	float: right;
+}
+// ----------------------------------------
+
+@media only screen and (max-width: 991px) {
+	.man-prices {
+		margin-bottom: 30px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.prices-block{
+		padding: 10px 0;	
+	}
+	.service-list {
+		padding: 15px 15px;
+	}
+	.prices-item {
+		padding: 4px 0;
+		font-size: 1rem;
+	}
+}	

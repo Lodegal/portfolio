@@ -1,0 +1,45 @@
+.modal-content {
+	background-image: url(../img/wel-section-bg.jpg);
+	background-position: top;
+	background-size: cover;
+	position: relative;
+	border-radius: 10px;
+	overflow: hidden;
+	&:before {
+		content:'';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(46,27,91, 0.85);
+	}
+}
+
+.modal-header {
+	position: relative;
+	border-bottom: 1px solid #9F9F9F;
+	.modal-title {
+		color: $gray-400;
+	}
+	.close {
+		opacity: 1;
+		text-shadow: none;
+		&:hover {
+			& span {
+			color: $primary;
+		}
+		}
+		& span {
+			transition: 0.3s;
+			text-shadow: none;
+			color: #9F9F9F;
+		}
+	}
+}
+
+.modal-footer {
+	position: relative;
+	border-top: 1px solid #9F9F9F;
+}

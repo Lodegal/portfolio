@@ -1,0 +1,27 @@
+a {
+	transition: $transition-base;
+}
+body {
+	background-image: url(../img/PIXNIO-194061-1280x720.jpg);
+	background-size: cover;
+	page-break-after: center;
+	background-repeat: no-repeat;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #000;
+		opacity: 0.5;
+	}
+}
+canvas{
+	width: 100vw;
+	height: 100vh;
+}
+#page-home {
+	display: flex;
+	align-items: center;
+}

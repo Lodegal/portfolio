@@ -1,0 +1,10 @@
+.contact-list {
+	display: flex;
+	margin-bottom: 25px;
+	
+	& li {
+		max-width: 190px;
+		width: 100%;
+		margin-right: 25px;
+	}
+}

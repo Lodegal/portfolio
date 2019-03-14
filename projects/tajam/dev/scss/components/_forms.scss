@@ -1,0 +1,60 @@
+.footer-form {
+	margin-bottom: 30px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	& input {
+		background-color: transparent;
+		border: 1px solid #A19AB3;
+		padding: 12px;
+		color: $white;
+		max-width: 270px;
+		width: 100%;
+		@include placeholder-color(#D9D8DE);
+		@include placeholder-opacity(0.5s)
+		margin-right: 10px;
+	}
+	&-button {
+		cursor: pointer;
+		width: 70px;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: $white;
+		transition: 0.3s;
+		opacity: 0.5;
+		&:hover {
+			opacity: 0.7;
+		}
+		& span {
+			width: 30px;
+			height: 30px;
+			display: block;
+		}
+	}
+}
+
+.contacts-form {
+	& input, textarea {
+		display: block;
+		border: 1px solid #E5E5E5;
+		width: 100%;
+		margin-bottom: 25px;
+		padding: 15px;
+		@include placeholder-color(#BCBBBE);
+		@include placeholder-opacity(0.5s)
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.footer-form-button {
+		margin-right: auto !important;
+		margin-left: 0px !important;
+	}
+}
