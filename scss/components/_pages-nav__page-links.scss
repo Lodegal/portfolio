@@ -6,3 +6,17 @@
 		font-size: 1em;
 	}
 }
+@media (max-width: 767px) {
+	.js .pages-nav {
+		padding: 10px 20px 0 20px!important;
+	}
+}
+@media (max-width: 575px) {
+	.pages-nav__page-links {
+		flex-direction: column!important;
+	}
+	.pages-nav__item {
+		text-align: left;
+		margin-bottom: 15px;
+	}
+}

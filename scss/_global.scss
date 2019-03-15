@@ -25,3 +25,26 @@ canvas{
 	display: flex;
 	align-items: center;
 }
+@media (max-width: 1199px) {
+
+}
+@media (max-width: 991px) {
+	#page-about {
+		overflow: auto;
+	}
+}
+@media (max-width: 847px) {
+	#page-portfolio {
+		display: flex;
+		align-items: center;
+	}
+}
+@media (max-width: 767px) {
+
+}
+@media (max-width: 575px) {
+
+}
+
+
+

@@ -7,3 +7,8 @@
 .page-about__content-link {
 	color: #ffff00;
 }
+@media (max-width: 991px) {
+	.page-about__content {
+		padding-right: 50px;
+	}
+}

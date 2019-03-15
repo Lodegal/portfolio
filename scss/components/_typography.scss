@@ -7,29 +7,50 @@ p {
 		margin-bottom: 0;
 	}
 }
-
 h2, .h2, h3, .h3 {
 	font-weight: 700;
 }
 h2, .h2 {
 	font-size: 100px;
 }
-
 h3, .h3 {
 	font-size: 70px;
 }
-
-h4, .h4 {
-
-}
-
-h5, .h5 {
-
-}
-
 h6, .h6 {
 	opacity: 0.8;
 }
 .-opacity {
 	opacity: 1;
+}
+@media (max-width: 1199px) {
+	h2, .h2 {
+		font-size: 80px;
+	}
+	h3, .h3 {
+		font-size: 60px;
+	}
+}
+@media (max-width: 991px) {
+	h2, .h2 {
+		font-size: 70px;
+	}
+	h3, .h3 {
+		font-size: 55px;
+	}
+}
+@media (max-width: 767px) {
+	h2, .h2 {
+		font-size: 50px;
+	}
+	h3, .h3 {
+		font-size: 45px;
+	}
+}
+@media (max-width: 575px) {
+	h2, .h2 {
+		font-size: 45px;
+	}
+	h3, .h3 {
+		font-size: 35px;
+	}
 }

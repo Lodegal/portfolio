@@ -10,3 +10,20 @@
 		justify-content: space-around;
 	}
 }
+.projects-wrapper__links .pages-nav__item {
+	width: 25%;
+}
+@media (max-width: 1199px) {
+	.projects-wrapper {
+		&__title {
+			margin-bottom: 20px;
+		}
+	}
+}
+@media (max-width: 575px) {
+	.projects-wrapper {
+		&__title {
+			text-align: left;
+		}
+	}
+}

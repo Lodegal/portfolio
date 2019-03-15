@@ -44,11 +44,6 @@ html.js,
 
 .pages-nav__item {
 	width: 33%;
-	padding: 1em;
-}
-
-.js .pages-nav__item {
-	padding: 0 10%;
 }
 
 .pages-nav .pages-nav__item--social {
@@ -84,7 +79,7 @@ html.js,
 }
 
 .link--page {
-	display: block;
+	display: inline-block;
 	color: #cecece;
 }
 .link--page:hover {
@@ -279,39 +274,9 @@ html.js,
 		max-height: 50vh;
 		margin: 0 0 0 50%;
 	}
-	.pages-nav__item {
-		width: 50%;
-		min-height: 20px;
-	}
-	.link--page {
-		overflow: hidden;
-		white-space: nowrap;
-		text-overflow: ellipsis;
-		text-decoration: none;
-	}
-	.link--social {
-		margin: 0 0.1em;
-	}
 }
 
 @media screen and (max-width: 40em) {
-	.js .pages-nav {
-		display: block;
-		padding: 10px 20px 0 20px;
-		text-align: left;
-	}
-	.js .pages-nav__item {
-		width: 100%;
-		padding: 4px 0;
-	}
-	.js .pages-nav__item--small {
-		display: inline-block;
-		width: auto;
-		margin-right: 5px;
-	}
-	.pages-nav__item--social {
-		font-size: 0.9em;
-	}
 	.menu-button {
 		top: 15px;
 		right: 10px;
@@ -324,3 +289,4 @@ html.js,
 		margin: 1em;
 	}
 }
+

@@ -2,6 +2,7 @@ $preloader-overlay-bg-color: #000;
 
 .preloader-overlay {
   position: fixed;
+  overflow: hidden;
   top: 0;
   left: 0;
   right: 0;
@@ -44,5 +45,10 @@ $preloader-overlay-bg-color: #000;
   }
   100% {
     opacity: 0;
+  }
+}
+@media (max-width: 767px) {
+  .counter h1, .counter hr {
+    display: none;
   }
 }

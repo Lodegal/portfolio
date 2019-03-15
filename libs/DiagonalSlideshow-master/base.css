@@ -186,13 +186,11 @@ body {
 	--color-deco: #141414;
 	--color-side: #353535;
 	font-family: Futura, "futura-pt", sans-serif;
-	min-height: 100vh;
 	color: #57585c;
 	color: var(--color-text);
 	background-color: var(--color-bg);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	padding-top: 10rem;
 }
 
 /* Page Loader */
@@ -482,7 +480,7 @@ a:focus {
 
 .content {
 	position: fixed;
-	top: 10rem;
+	top: 0;
 	left: 0;
 	width: 100%;
 	height: calc(100% - 10rem);
@@ -498,7 +496,7 @@ a:focus {
 	width: 100%;
 	height: 100%;
 	padding: 10vh 5vw;
-	overflow: auto;
+	overflow: hidden;
 }
 
 .content__item--current,
@@ -710,6 +708,11 @@ a:focus {
 	100% {
 		opacity: 0;
 		transform: translateX(35px);
+	}
+}
+@media (max-width: 575px) {
+	.slideshow {
+		height: calc(100vh - 15rem);
 	}
 }
 
